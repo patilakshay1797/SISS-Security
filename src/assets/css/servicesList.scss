@@ -1,0 +1,121 @@
+.homeServices {
+  padding: 1.5rem 2rem;
+  .ourServicesHeading {
+    text-align: center;
+    :first-child {
+      font-size: var(--xxxxlarge-font);
+      font-weight: 700;
+      color: var(--containedBg);
+    }
+    :last-child {
+      font-size: var(--xxlarge-font);
+    }
+  }
+  .services {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    a {
+      color: #fff;
+    }
+    .securityService,
+    .housekeepingService {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      .transitionBtmToTop {
+        width: 35%;
+        .securityInfo,
+        .houseKeepingInfo {
+          padding: 2rem;
+          .info {
+            margin-top: 1rem;
+          }
+          .xlargeFont {
+            color: var(--containedBg);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    position: relative;
+    .securityService .securityImg,
+    .housekeepingService .houseKeepingImg {
+      .displayOnHover {
+        // display: none;
+        opacity: 0;
+        position: absolute;
+        top: 47%;
+        left: 28%;
+        color: #fff;
+        z-index: 101;
+        transition: all 0.3s ease-in-out;
+      }
+      height: 45vh;
+      position: relative;
+
+      &:hover {
+        .displayOnHover {
+          // display: block;
+          opacity: 0.8;
+          font-size: var(--xlarge-font);
+          color: var(--containedBg);
+        }
+        cursor: pointer;
+        &::after {
+          content: "";
+          position: absolute;
+          background: rgba(0, 0, 0, 0.6);
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+        }
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 1rem;
+      }
+    }
+    .housekeepingService .houseKeepingImg {
+      .displayOnHover {
+        left: 18%;
+      }
+    }
+    .securityService {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .homeServices {
+    padding: 1rem;
+    .ourServicesHeading {
+      :first-child {
+        font-size: var(--xlarge-font);
+      }
+      :last-child {
+        font-size: var(--large-font);
+      }
+    }
+    .services {
+      .securityService,
+      .housekeepingService {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        .transitionBtmToTop {
+          width: 100%;
+          .securityInfo,
+          .houseKeepingInfo {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

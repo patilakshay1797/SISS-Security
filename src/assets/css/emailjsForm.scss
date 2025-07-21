@@ -1,0 +1,148 @@
+.homeContactUsContainer {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: #1a1a1a;
+  .contactFormContainer {
+    padding: 1.5rem 3rem;
+    background-color: #eeeeee;
+    color: #000;
+    width: 40vw;
+    border-radius: 1rem;
+    box-shadow: 0 0px 5px rgba(255, 255, 255, 0.1),
+      0 0 5px rgba(255, 255, 255, 0.2);
+    .formHeadingContainer {
+      margin: -1.5rem -3rem 0rem -3rem;
+      padding: 1.5rem 3rem 1.5rem 3rem;
+      background-color: #1a1a1a;
+      border-radius: 0.9rem 0.9rem 0rem 0rem;
+      .reachUs {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: var(--xxlarge-font);
+        font-weight: 700;
+        color: var(--containedBg);
+        .MuiSvgIcon-root {
+          font-size: var(--xxlarge-font);
+        }
+      }
+      .fillOutForm {
+        color: #ccc;
+      }
+    }
+    .formContainer {
+      padding: 1rem 0rem;
+      .form {
+        display: flex;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        .MuiFormControl-root {
+          width: calc(100% - 0.6rem);
+          &:last-child {
+            width: calc(100% - 1.2rem);
+          }
+          .MuiFormLabel-root {
+          }
+          .MuiInputBase-root {
+            #outlined-basic {
+            }
+          }
+        }
+      }
+      .sendButton {
+        margin-top: 2rem;
+        .MuiButtonBase-root {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.8rem;
+          background-color: var(--primary-blue-color) !important;
+          &:hover {
+            background-color: #084d9a !important;
+          }
+        }
+      }
+    }
+  }
+  .socialMediaContainer {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    transition: all 0.2s linear;
+    border: 2px rgba(255, 255, 255, 0.1) solid;
+    border-radius: 1rem;
+    &:hover {
+      box-shadow: 0 0px 14px rgba(255, 255, 255, 0.1),
+        0 0 5px rgba(255, 255, 255, 0.2);
+    }
+    .connectUsText {
+      font-size: var(--large-font);
+      color: var(--containedBg);
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.homeLocateUsMapContainer {
+  padding: 2rem 3rem;
+  text-align: center;
+  font-size: var(--xxlarge-font);
+  color: var(--containedBg);
+  font-weight: 700;
+  .locateUsText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .MuiSvgIcon-root {
+      font-size: 2rem;
+    }
+  }
+  .mapLocation {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    .gmpMapContainer {
+      height: 400px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .homeContactUsContainer {
+    flex-direction: column;
+  }
+  .homeLocateUsMapContainer {
+    .mapLocation {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeContactUsContainer {
+    padding: 1.5rem;
+    .contactFormContainer {
+      padding: 1rem;
+      width: 90vw;
+      .formHeadingContainer {
+        margin: -1rem -1rem 0rem -1rem;
+        padding: 1rem;
+      }
+    }
+  }
+  .homeLocateUsMapContainer {
+    padding: 2rem 1rem;
+    .mapLocation {
+      .gmpMapContainer {
+        height: 300px;
+        width: 100%;
+      }
+    }
+  }
+}

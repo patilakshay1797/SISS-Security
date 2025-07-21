@@ -1,0 +1,137 @@
+.homeMissionVissionCoreContainer {
+  padding: 3rem 2rem 1.5rem 2rem;
+  text-align: center;
+  .missionVissionWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 1.5rem;
+
+    .vissionWrapper,
+    .missionWrapper {
+      position: relative;
+      padding: 1.5rem;
+      background-color: var(--card-background-color);
+      border-radius: 1rem;
+      width: 35%;
+      text-align: left;
+      position: relative;
+      border: 2px rgba(255, 255, 255, 0.1) solid;
+      transition: all 0.2s linear;
+      &:hover {
+        box-shadow: 0 0px 14px rgba(255, 255, 255, 0.1),
+          0 0 15px rgba(255, 255, 255, 0.2);
+      }
+      .forBeforeCSS {
+        padding-left: 1.4rem;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 10%;
+          bottom: 10%;
+          background-color: var(--containedBg);
+          left: 1.4rem;
+          width: 0.2rem;
+        }
+        .missionText,
+        .vissionText {
+          position: relative;
+          font-size: var(--xlarge-font);
+          color: var(--containedBg);
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          .MuiSvgIcon-root {
+            font-size: var(--xlarge-font);
+          }
+        }
+        .mission,
+        .vission {
+          padding-top: 1rem;
+          font-size: var(--slarge-font);
+          line-height: var(--xlarge-font);
+        }
+      }
+    }
+  }
+  .coreValuesWrapper {
+    padding: 1.5rem 3rem;
+    .coreText {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: var(--xlarge-font);
+      padding: 1rem;
+      color: var(--containedBg);
+      .MuiSvgIcon-root {
+        font-size: var(--xlarge-font);
+      }
+    }
+    .coreValues {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .responsiveDesign {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        .integrity {
+          padding: 0.8rem;
+          background-color: var(--card-background-color);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0.5rem;
+          transition: all 0.2s linear;
+          border: 2px rgba(255, 255, 255, 0.1) solid;
+          &:hover {
+            box-shadow: 0 0px 14px rgba(255, 255, 255, 0.1),
+              0 0 5px rgba(255, 255, 255, 0.2);
+          }
+          .dot {
+            border-radius: 50%;
+            background-color: var(--containedBg);
+            padding: 0.3rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .homeMissionVissionCoreContainer {
+    .missionVissionWrapper {
+      gap: 2.5rem;
+      .vissionWrapper,
+      .missionWrapper {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeMissionVissionCoreContainer {
+    .missionVissionWrapper {
+      flex-direction: column;
+      .vissionWrapper,
+      .missionWrapper {
+        width: 80%;
+      }
+    }
+    .coreValuesWrapper {
+      .coreValues {
+        .responsiveDesign {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}

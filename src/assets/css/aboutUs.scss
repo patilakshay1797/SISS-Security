@@ -1,0 +1,76 @@
+.aboutUsInfoConatiner {
+  padding: 3rem 2rem 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .aboutUsInfoImgContainer {
+    height: 65vh;
+    img {
+      height: 100%;
+      width: 90%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 1rem;
+    }
+  }
+  .aboutUsInfoText {
+    width: 40%;
+    font-size: var(--large-font);
+    line-height: 2rem;
+    .whoWeAre {
+      margin-bottom: 2rem;
+      color: var(--containedBg);
+    }
+    .aboutUsInfoMsgWrapper {
+      span {
+        color: var(--containedBg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .aboutUsInfoConatiner {
+    padding: 2rem 1rem;
+    flex-direction: column-reverse;
+    .aboutUsInfoText {
+      width: 80%;
+    }
+    .aboutUsInfoImgContainer {
+      height: 50vh;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutUsInfoConatiner {
+    padding: 2rem 1rem;
+    flex-direction: column-reverse;
+
+    .aboutUsInfoText {
+      width: 95%;
+    }
+    .aboutUsInfoImgContainer {
+      height: 40vh;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .homeMissionVissionCoreContainer {
+    padding: 0.5rem;
+    .transitionBtmToTop {
+      .missionVissionWrapper {
+        gap: 1rem;
+        .missionWrapper,
+        .vissionWrapper {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

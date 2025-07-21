@@ -1,0 +1,90 @@
+.whyUsContainer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .whyUsContentWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    .whyUsText {
+      margin-bottom: 1.5rem;
+      font-size: var(--xxxlarge-font);
+      line-height: var(--xxxlarge-font);
+      font-weight: 700;
+      color: var(--containedBg);
+    }
+    .whyUsDescription {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2rem;
+      max-width: 42rem;
+      font-size: var(--large-font);
+      line-height: var(--xxlarge-font);
+      color: var(--white-text-color);
+    }
+    .whyUsGrid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      .transitionBtmToTop {
+        width: 20%;
+        .iconTitleWrapper {
+          border-radius: var(--normal-font);
+          background-color: var(--card-background-color);
+          padding: 1.5rem;
+          .icon {
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: center;
+            .MuiSvgIcon-root {
+              font-size: var(--big-font);
+              // color: var(--containedBg);
+            }
+          }
+          .title {
+            margin-bottom: 0.5rem;
+            font-size: var(--slarge-font);
+            line-height: 1.75rem;
+            font-weight: 600;
+            color: var(--containedBg);
+          }
+          .description {
+            font-size: var(--normal-font);
+            line-height: 1.25rem;
+            color: rgb(156, 163, 175);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .whyUsContainer {
+    .whyUsContentWrapper {
+      .whyUsGrid {
+        gap: 1rem;
+        .transitionBtmToTop {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .whyUsContainer {
+    .whyUsContentWrapper {
+      .whyUsGrid {
+        gap: 0.3rem;
+        .transitionBtmToTop {
+          width: 80%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

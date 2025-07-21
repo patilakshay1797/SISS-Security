@@ -1,0 +1,211 @@
+footer {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  gap: 2rem;
+  background-color: #1a1a1a;
+  padding: 3rem 3rem 1.5rem 3rem;
+  background-image: url("../images/wave.svg");
+  background-color: #2a384f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .logoImgContainer {
+    width: 35%;
+    font-size: var(--large-font);
+    img {
+      height: 8rem;
+    }
+    .companyName {
+      .presence {
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--white-text-color);
+      }
+      .allPlaces {
+        padding-top: 0.5rem;
+        font-size: var(--slarge-font);
+      }
+    }
+  }
+  .footerContent {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    // font-weight: 700;
+    .ourServices,
+    .officeAddresses,
+    .companyLinks,
+    .contactDetails {
+      .footerHeading {
+        font-size: var(--large-font);
+        color: var(--containedBg);
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      .list {
+        font-size: var(--slarge-font);
+        line-height: var(--xxxlarge-font);
+
+        .info {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 1rem;
+          .MuiSvgIcon-root {
+            font-size: 1.8rem;
+            color: var(--containedBg);
+          }
+          &.socialMediaIcons {
+            margin-top: 0.5rem;
+            .MuiSvgIcon-root {
+              color: var(--white-text-color);
+              &:hover {
+                color: var(--containedBg);
+              }
+            }
+          }
+        }
+        .address {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 1rem;
+          div {
+            line-height: var(--xlarge-font);
+          }
+          .MuiSvgIcon-root {
+            font-size: var(--xxxlarge-font);
+            color: var(--containedBg);
+          }
+        }
+      }
+    }
+    .officeAddresses {
+      width: 30%;
+    }
+    .companyLinks .transitionLeftToRight {
+      .footerHeading {
+        margin-bottom: 0.2rem;
+        font-size: var(--normal-font);
+      }
+      .list {
+        display: flex;
+        gap: 1.5rem;
+        font-size: var(--normal-font);
+      }
+    }
+    .ourServices .list {
+      display: flex;
+      // flex-direction: column;
+      gap: 1.5rem;
+      .service {
+        cursor: pointer;
+        &:hover {
+          color: var(--containedBg);
+        }
+      }
+    }
+  }
+}
+.disclaimer {
+  font-size: var(--slarge-font);
+  padding: 1.5rem 12rem;
+  border-top: 2px #fff solid;
+}
+@media screen and (max-width: 1312px) {
+  footer {
+    .logoImgContainer {
+      width: 55%;
+    }
+    .footerContent {
+      .officeAddresses {
+        width: 45%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  footer {
+    gap: 2rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    padding: 2rem 1.5rem;
+    .logoImgContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      width: 80%;
+      img {
+        height: 7rem;
+      }
+    }
+    .ourServices,
+    .officeAddresses,
+    .companyLinks,
+    .contactDetails {
+      .list {
+        font-size: var(--slarge-font);
+        .address {
+          gap: 0.8rem;
+          .MuiSvgIcon-root {
+            font-size: var(--normal-font);
+          }
+        }
+      }
+    }
+    .officeAddresses {
+      width: 30%;
+    }
+  }
+  .disclaimer {
+    padding: 1.5rem 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    .logoImgContainer {
+      width: 100%;
+      font-size: var(--large-font);
+    }
+    .officeAddresses {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  footer {
+    .logoImgContainer {
+      flex-direction: column;
+      img {
+        height: 6rem;
+      }
+    }
+    .footerContent {
+      .ourServices,
+      .officeAddresses,
+      .companyLinks,
+      .contactDetails {
+        width: 100%;
+        .list {
+          .address {
+            gap: 0.8rem;
+            padding-bottom: 0.5rem;
+            .MuiSvgIcon-root {
+              font-size: var(--xlarge-font);
+            }
+          }
+          .info {
+            gap: 0.8rem;
+            .MuiSvgIcon-root {
+              font-size: var(--xlarge-font);
+            }
+          }
+        }
+      }
+    }
+  }
+}

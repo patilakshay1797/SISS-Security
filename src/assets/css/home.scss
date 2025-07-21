@@ -1,0 +1,156 @@
+.homeInfoContainer {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  .homeInfoImgContainer {
+    height: 65vh;
+    img {
+      height: 100%;
+      width: 90%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 1rem;
+    }
+  }
+  .homeInfoDetailContainer {
+    width: 40%;
+    .homeDediacatedText {
+      font-size: var(--xxxxlarge-font);
+      margin-bottom: 1rem;
+    }
+    .homeDediacatedInfoText {
+      font-size: var(--large-font);
+      margin-bottom: 1.5rem;
+    }
+    .homeInfoCheckList {
+      background-color: var(--card-background-color);
+      padding: 1.2rem;
+      border-radius: 0.7rem;
+      font-size: var(--large-font);
+      .checkListPoint {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0px;
+        gap: 0.8rem;
+        .MuiSvgIcon-root {
+          font-size: var(--xlarge-font) !important;
+          color: var(--containedBg);
+        }
+        .pointText {
+          line-height: 1.5rem;
+        }
+      }
+      transition: all 0.3s ease-in-out;
+      border: 2px rgba(255, 255, 255, 0.1) solid;
+      &:hover {
+        box-shadow: 0 0px 14px rgba(255, 255, 255, 0.1),
+          0 0 15px rgba(255, 255, 255, 0.2);
+      }
+    }
+    .homeContactUs {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.2rem 0px;
+      padding: 0.2rem;
+      .MuiSvgIcon-root {
+        font-size: var(--xxxxlarge-font) !important;
+        color: var(--containedBg);
+      }
+      .phoneNumber {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        .number {
+          font-size: var(--large-font);
+        }
+      }
+    }
+  }
+}
+
+.homeCertificationsContainer {
+  margin-top: 2rem;
+  padding: 1.5rem 8rem 0rem 8rem;
+  background-color: #1a1a1a;
+  .certificateLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: var(--xxlarge-font);
+    font-weight: 700;
+    color: var(--containedBg);
+    .MuiSvgIcon-root {
+      font-size: var(--xxlarge-font);
+    }
+  }
+  .certificates {
+    display: flex;
+    gap: 1.3rem;
+    font-size: var(--large-font);
+    line-height: var(--xxxxlarge-font);
+    padding: 1.4rem 0rem;
+    .certificateList {
+      width: 45%;
+      ul li {
+        // list-style: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .homeServices .services {
+    .housekeepingServices,
+    .sercurityServices {
+      height: 35vh;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .homeInfoContainer {
+    flex-direction: column-reverse;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    .homeInfoImgContainer {
+      height: 50vh;
+      img {
+        width: 100%;
+      }
+    }
+    .homeInfoDetailContainer {
+      width: 100%;
+    }
+  }
+  .homeServices {
+    .services {
+      flex-direction: column;
+      .housekeepingServices,
+      .sercurityServices {
+        height: 45vh;
+      }
+    }
+  }
+  .homeCertificationsContainer {
+    .certificates {
+      flex-direction: column;
+      gap: 0rem;
+      .certificateList {
+        width: 90%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .homeCertificationsContainer {
+    padding: 1.5rem 2rem 0rem 2rem;
+    .certificateLabel {
+    }
+    .certificates {
+      font-size: var(--slarge-font);
+      line-height: var(--xxlarge-font);
+    }
+  }
+}

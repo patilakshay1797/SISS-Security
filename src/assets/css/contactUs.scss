@@ -1,0 +1,49 @@
+.contactUsWaysContainer {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  .reachUsWrapper {
+    padding: 1.5rem;
+    text-align: center;
+    div {
+      padding: 0.5rem;
+    }
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.3rem;
+      .MuiSvgIcon-root {
+        font-size: var(--xlarge-font);
+        color: var(--containedBg);
+      }
+    }
+    .reachToUs {
+      font-size: var(--normal-font);
+    }
+    .phoneNo {
+      font-size: var(--large-font);
+    }
+    &:hover .phoneNo.email {
+      color: var(--containedBg);
+    }
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contactUsWaysContainer {
+    .reachUsWrapper {
+      padding: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactUsWaysContainer {
+    gap: 0.1rem;
+  }
+}

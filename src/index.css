@@ -1,0 +1,278 @@
+:root {
+  /* color constants */
+  --white-text-color: #cccccc;
+  /* --primary-blue-color: #0951b7; */
+  --primary-blue-color: #0a66c2;
+  --body-background-color: #0f0f0f;
+  --card-background-color: #1a1a1a;
+  --containedBg: #e6a700;
+  --containedBgHover: #c08200;
+  --pure-black: #000000;
+  --dark-shade-black: rgba(13, 14, 13, 1);
+
+  /* font constant */
+  --small-font: 0.8rem;
+  --normal-font: 1rem;
+  --slarge-font: 1.2rem;
+  --large-font: 1.4rem;
+  --xlarge-font: 1.8rem;
+  --xxlarge-font: 2rem;
+  --xxxlarge-font: 2.4rem;
+  --xxxxlarge-font: 2.8rem;
+  --big-font: 3.4rem;
+
+  /* height constants */
+  --header-height: 50px;
+  --landing-img-height: 75vh;
+}
+.smallFont {
+  font-size: var(--small-font);
+}
+.normalFont {
+  font-size: var(--normal-font);
+}
+.largeFont {
+  font-size: var(--large-font);
+}
+.xlargeFont {
+  font-size: var(--xlarge-font);
+}
+.xxlargeFont {
+  font-size: var(--xxlarge-font);
+}
+.xxxlargeFont {
+  font-size: var(--xxxlarge-font);
+}
+.xxxxlargeFont {
+  font-size: var(--xxxxlarge-font);
+}
+.bigFont {
+  font-size: var(--big-font);
+}
+@media screen and (max-width: 992px) {
+  :root {
+    --small-font: 0.7rem;
+    --normal-font: 0.9rem;
+    --slarge-font: 1.1rem;
+    --large-font: 1.3rem;
+    --xlarge-font: 1.6rem;
+    --xxlarge-font: 1.8rem;
+    --xxxlarge-font: 2.2rem;
+    --xxxxlarge-font: 2.5rem;
+    --big-font: 2.8rem;
+  }
+  .smallFont {
+    font-size: var(--small-font);
+  }
+  .normalFont {
+    font-size: var(--normal-font);
+  }
+  .largeFont {
+    font-size: var(--large-font);
+  }
+  .xlargeFont {
+    font-size: var(--xlarge-font);
+  }
+  .xxlargeFont {
+    font-size: var(--xxlarge-font);
+  }
+  .xxxlargeFont {
+    font-size: var(--xxxlarge-font);
+  }
+  .xxxxlargeFont {
+    font-size: var(--xxxxlarge-font);
+  }
+  .bigFont {
+    font-size: var(--big-font);
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --small-font: 0.6rem;
+    --normal-font: 0.8rem;
+    --slarge-font: 1rem;
+    --large-font: 1.2rem;
+    --xlarge-font: 1.4rem;
+    --xxlarge-font: 1.6rem;
+    --xxxlarge-font: 1.8rem;
+    --xxxxlarge-font: 2rem;
+    --big-font: 2.4rem;
+  }
+  .smallFont {
+    font-size: var(--small-font);
+  }
+  .normalFont {
+    font-size: var(--normal-font);
+  }
+  .largeFont {
+    font-size: var(--large-font);
+  }
+  .xlargeFont {
+    font-size: var(--xlarge-font);
+  }
+  .xxlargeFont {
+    font-size: var(--xxlarge-font);
+  }
+  .xxxlargeFont {
+    font-size: var(--xxxlarge-font);
+  }
+  .xxxxlargeFont {
+    font-size: var(--xxxxlarge-font);
+  }
+  .bigFont {
+    font-size: var(--big-font);
+  }
+}
+/* Global styles */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: var(--normal-font);
+  color: var(--white-text-color);
+  background: var(--body-background-color);
+}
+main {
+  margin-top: var(--header-height);
+}
+/* Button css override start */
+.MuiButtonBase-root.css-74d805-MuiButtonBase-root-MuiButton-root {
+  background-color: var(--containedBg) !important;
+  font-weight: bold;
+  font-size: var(--normal-font);
+  &:hover {
+    background-color: var(--containedBgHover) !important;
+  }
+}
+a {
+  text-decoration: none;
+  color: var(--white-text-color);
+  transition: all 0.2s linear;
+  &:hover {
+    color: var(--containedBg);
+  }
+}
+.bold {
+  font-weight: 700;
+}
+.card {
+  background-color: var(--card-background-color);
+  border: 2px rgba(255, 255, 255, 0.1) solid;
+  transition: all 0.2s linear;
+  border-radius: 1rem;
+  &:hover {
+    box-shadow: 0 0px 14px rgba(255, 255, 255, 0.1),
+      0 0 5px rgba(255, 255, 255, 0.2);
+  }
+}
+.email {
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    color: var(--containedBg);
+  }
+}
+.socialMediaIcons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  .MuiSvgIcon-root {
+    transition: all 0.2s linear;
+    &:hover {
+      cursor: pointer;
+      color: var(--containedBg);
+    }
+  }
+}
+.contactHighlightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: #1a1a1a;
+  .highlightText {
+    font-size: var(--xxxxlarge-font);
+    width: 50%;
+  }
+  .contactUsButton .MuiButtonBase-root {
+    font-size: var(--large-font);
+  }
+}
+.displayNone {
+  display: none;
+}
+.opacityZero {
+  opacity: 0;
+}
+.transitionBtmToTop {
+  animation: transitionBtmToTop 0.5s ease-in-out forwards;
+}
+.transitionLeftToRight {
+  animation: transitionLeftToRight 0.5s ease-in-out forwards;
+}
+.transitionRightToLeft {
+  animation: transitionRightToLeft 0.5s ease-in-out forwards;
+}
+@keyframes transitionBtmToTop {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes transitionLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes transitionRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 992px) {
+  main {
+    margin-top: 0px;
+  }
+  .contactHighlightContainer {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    .highlightText {
+      text-align: center;
+      width: 95%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactHighlightContainer {
+    flex-direction: column;
+    gap: 2rem;
+    .highlightText {
+      font-size: var(--xlarge-font);
+    }
+    .contactUsButton .MuiButtonBase-root {
+      font-size: var(--normal-font);
+    }
+  }
+}
