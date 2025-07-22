@@ -17,9 +17,15 @@ import FloaterEmailJs from "./components/FloaterEmailJs";
 import ScrollToTop from "./utils/ScrollToTop";
 import { delayedDisplay } from "./utils/utility";
 import AnimateElement from "./components/AnimateElement";
+import { useLocation } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [activePage, setActivePage] = useState(getPathLabel(useLocation()));
+
+  function getPathLabel(url) {
+    const lastSegment = url.pathname.split("/");
+    return lastSegment[1] || "home";
+  }
 
   useEffect(() => {
     // This is where you can add any side effects or initializations
@@ -34,10 +40,10 @@ function App() {
 
   return (
     <div className="app">
-      <Header></Header>
+      <Header activePage={activePage} setPage={setActivePage}></Header>
       <Outlet></Outlet>
       <ScrollToTop />
-      <Footer></Footer>
+      <Footer activePage={activePage} setPage={setActivePage}></Footer>
       <div className="emailJsFloaterContainer">
         <div>
           <FloaterEmailJs></FloaterEmailJs>

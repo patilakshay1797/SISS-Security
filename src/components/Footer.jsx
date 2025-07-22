@@ -12,7 +12,7 @@ import AnimateElement from "./AnimateElement";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { isMobileDevice } from "../utils/utility";
 
-const Footer = () => {
+const Footer = ({ activePage, setPage }) => {
   const thisDate = new Date();
   const year = thisDate.getFullYear();
   return (
@@ -139,16 +139,28 @@ const Footer = () => {
               propDelay={400}
             >
               <div className="list">
-                <div className="home">
+                <div
+                  className={activePage == "home" ? "activePage" : ""}
+                  onClick={() => setPage("home")}
+                >
                   <Link to="/">Home</Link>
                 </div>
-                <div className="aboutUs">
+                <div
+                  className={activePage == "aboutus" ? "activePage" : ""}
+                  onClick={() => setPage("aboutus")}
+                >
                   <Link to="/aboutus">About Us</Link>
                 </div>
-                <div className="services">
+                <div
+                  className={activePage == "services" ? "activePage" : ""}
+                  onClick={() => setPage("services")}
+                >
                   <Link to="/services">Services</Link>
                 </div>
-                <div className="contactUs">
+                <div
+                  className={activePage == "contactus" ? "activePage" : ""}
+                  onClick={() => setPage("contactus")}
+                >
                   <Link to="/contactus">Contact Us</Link>
                 </div>
               </div>

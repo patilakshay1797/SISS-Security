@@ -50,6 +50,11 @@ footer {
       .list {
         font-size: var(--normal-font);
         line-height: var(--xxxlarge-font);
+        .activePage {
+          a {
+            color: var(--containedBg);
+          }
+        }
         @media screen and (max-width: 768px) {
           font-size: var(--slarge-font);
         }

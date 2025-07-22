@@ -4,10 +4,9 @@ import logo from "../assets/images/Upscaled_LOGO.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState, useEffect, useRef } from "react";
 import CloseIcon from "@mui/icons-material/Close";
-import AnimateElement from "./AnimateElement";
 import EmailIcon from "@mui/icons-material/Email";
 
-const Header = () => {
+const Header = ({ activePage, setPage }) => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [mobileMenuBurgerIconVisible, setMobileMenuBurgerIconVisible] =
     useState(false);
@@ -48,7 +47,10 @@ const Header = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const hideShowMobileMenu = () => {
+
+  const hideShowMobileMenu = (pageToOpen) => {
+    // const url = useLocation();
+    setPage(pageToOpen);
     if (window.innerWidth <= 992) {
       if (!mobileMenuVisible) {
         setTimeout(() => {
@@ -77,16 +79,28 @@ const Header = () => {
           }`}
         >
           <ul>
-            <li onClick={() => hideShowMobileMenu()}>
+            <li
+              className={activePage == "home" ? "activePage" : ""}
+              onClick={() => hideShowMobileMenu("home")}
+            >
               <Link to="/">Home</Link>
             </li>
-            <li onClick={() => hideShowMobileMenu()}>
+            <li
+              className={activePage == "aboutus" ? "activePage" : ""}
+              onClick={() => hideShowMobileMenu("aboutus")}
+            >
               <Link to="/aboutus">About Us</Link>
             </li>
-            <li onClick={() => hideShowMobileMenu()}>
+            <li
+              className={activePage == "services" ? "activePage" : ""}
+              onClick={() => hideShowMobileMenu("services")}
+            >
               <Link to="/services">Services</Link>
             </li>
-            <li onClick={() => hideShowMobileMenu()}>
+            <li
+              className={activePage == "contactus" ? "activePage" : ""}
+              onClick={() => hideShowMobileMenu("contactus")}
+            >
               <Link to="contactus">Contact Us</Link>
             </li>
           </ul>
