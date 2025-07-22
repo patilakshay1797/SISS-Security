@@ -6,7 +6,7 @@ export const ContactUsLinkHighlight = () => {
     <div className="contactHighlightContainer">
       <div className="highlightText">
         <div>Your Trusted Partner in Security </div>
-        <div>& Housekeeping Solutionss</div>
+        <div>& Housekeeping Solutions</div>
       </div>
       <div className="contactUsButton">
         <Link to="/contactus">

@@ -23,7 +23,10 @@ footer {
       }
       .allPlaces {
         padding-top: 0.5rem;
-        font-size: var(--slarge-font);
+        font-size: var(--normal-font);
+        @media screen and (max-width: 768px) {
+          font-size: var(--slarge-font);
+        }
       }
     }
   }
@@ -45,9 +48,11 @@ footer {
         margin-bottom: 1rem;
       }
       .list {
-        font-size: var(--slarge-font);
+        font-size: var(--normal-font);
         line-height: var(--xxxlarge-font);
-
+        @media screen and (max-width: 768px) {
+          font-size: var(--slarge-font);
+        }
         .info {
           display: flex;
           justify-content: flex-start;
@@ -112,7 +117,8 @@ footer {
 .disclaimer {
   font-size: var(--slarge-font);
   padding: 1.5rem 12rem;
-  border-top: 2px #fff solid;
+  // border-top: 2px #fff solid;
+  box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
 }
 @media screen and (max-width: 1312px) {
   footer {

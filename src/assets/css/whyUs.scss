@@ -1,8 +1,5 @@
 .whyUsContainer {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 5rem 1rem;
   .whyUsContentWrapper {
     margin-left: auto;
     margin-right: auto;
@@ -50,6 +47,9 @@
             line-height: 1.75rem;
             font-weight: 600;
             color: var(--containedBg);
+            @media screen and (max-width: 768px) {
+              font-size: var(--large-font);
+            }
           }
           .description {
             font-size: var(--normal-font);

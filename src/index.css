@@ -2,13 +2,15 @@
   /* color constants */
   --white-text-color: #cccccc;
   /* --primary-blue-color: #0951b7; */
-  --primary-blue-color: #0a66c2;
+  /* --primary-blue-color: #0a66c2; */
+  --primary-blue-color: #263a5c;
   --body-background-color: #0f0f0f;
   --card-background-color: #1a1a1a;
   --containedBg: #e6a700;
   --containedBgHover: #c08200;
   --pure-black: #000000;
   --dark-shade-black: rgba(13, 14, 13, 1);
+  --light-icon-color: rgba(204, 204, 204, 1);
 
   /* font constant */
   --small-font: 0.8rem;
@@ -167,7 +169,7 @@ a {
   transition: all 0.2s linear;
   border-radius: 1rem;
   &:hover {
-    box-shadow: 0 0px 14px rgba(255, 255, 255, 0.1),
+    box-shadow: 0 0px 5px rgba(255, 255, 255, 0.1),
       0 0 5px rgba(255, 255, 255, 0.2);
   }
 }

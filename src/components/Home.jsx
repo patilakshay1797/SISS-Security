@@ -12,6 +12,8 @@ import MissionVissionCore from "./MissionVissionCore";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import AnimateElement from "./AnimateElement";
 import WhyUs from "./WhyUs";
+import CounterComp from "./CounterComp";
+import ClientLogoSlider from "./ClientLogoSlider";
 
 const Home = () => {
   const homeLoadingImages = [homeLandingImage];
@@ -140,6 +142,8 @@ const Home = () => {
       </div>
       {/* <MissionVissionCore></MissionVissionCore> */}
       <WhyUs></WhyUs>
+      <ClientLogoSlider></ClientLogoSlider>
+      <CounterComp></CounterComp>
       <EmailJSForm></EmailJSForm>
       <MapLocation></MapLocation>
     </main>

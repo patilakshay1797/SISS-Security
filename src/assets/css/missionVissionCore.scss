@@ -20,8 +20,8 @@
       border: 2px rgba(255, 255, 255, 0.1) solid;
       transition: all 0.2s linear;
       &:hover {
-        box-shadow: 0 0px 14px rgba(255, 255, 255, 0.1),
-          0 0 15px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0px 5px rgba(255, 255, 255, 0.1),
+          0 0 5px rgba(255, 255, 255, 0.2);
       }
       .forBeforeCSS {
         padding-left: 1.4rem;
@@ -89,8 +89,8 @@
           transition: all 0.2s linear;
           border: 2px rgba(255, 255, 255, 0.1) solid;
           &:hover {
-            box-shadow: 0 0px 14px rgba(255, 255, 255, 0.1),
-              0 0 5px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0px 3px rgba(255, 255, 255, 0.1),
+              0 0 2px rgba(255, 255, 255, 0.2);
           }
           .dot {
             border-radius: 50%;

@@ -44,7 +44,6 @@ const WhyUs = () => {
             <AnimateElement
               animationClass={"transitionBtmToTop"}
               propThreshold={0.3}
-              propDelay={index * 200}
               key={index}
             >
               <div key={index} className="iconTitleWrapper card">
