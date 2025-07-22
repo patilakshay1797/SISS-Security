@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../assets/css/header.scss";
 import logo from "../assets/images/Upscaled_LOGO.png";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -7,6 +7,13 @@ import CloseIcon from "@mui/icons-material/Close";
 import EmailIcon from "@mui/icons-material/Email";
 
 const Header = ({ activePage, setPage }) => {
+  // let url = useLocation();
+  // const path = url.pathname.split("/")[1];
+  // if (path != activePage) {
+  //   setPage(path);
+  // } else if (path == "") {
+  //   setPage("home");
+  // }
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [mobileMenuBurgerIconVisible, setMobileMenuBurgerIconVisible] =
     useState(false);
@@ -119,7 +126,7 @@ const Header = ({ activePage, setPage }) => {
         {mobileMenuBurgerIconVisible && (
           <div
             className="navListBurgerIcon"
-            onClick={() => hideShowMobileMenu()}
+            onClick={() => hideShowMobileMenu(activePage)}
           >
             {mobileMenuVisible ? (
               <CloseIcon ref={triggerRef} />
