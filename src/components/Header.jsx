@@ -79,17 +79,15 @@ const Header = ({ activePage, setPage }) => {
           }`}
         >
           <ul>
-            <li
-              className={activePage == "home" ? "activePage" : ""}
-              onClick={() => hideShowMobileMenu("home")}
-            >
-              <Link to="/">Home</Link>
+            <li className={activePage == "home" ? "activePage" : ""}>
+              <Link to="/" onClick={() => hideShowMobileMenu("home")}>
+                Home
+              </Link>
             </li>
-            <li
-              className={activePage == "aboutus" ? "activePage" : ""}
-              onClick={() => hideShowMobileMenu("aboutus")}
-            >
-              <Link to="/aboutus">About Us</Link>
+            <li className={activePage == "aboutus" ? "activePage" : ""}>
+              <Link to="/aboutus" onClick={() => hideShowMobileMenu("aboutus")}>
+                About Us
+              </Link>
             </li>
             <li
               className={activePage == "services" ? "activePage" : ""}
