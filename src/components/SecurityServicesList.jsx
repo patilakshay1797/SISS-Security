@@ -72,8 +72,8 @@ const ServiceCard = ({ service }) => {
 
 const SecurityServicesList = () => {
   return (
-    <section className="security-services">
-      <div className="securityServicesListHeading">Security Services</div>
+    <section id="securityServicesList" className="security-services">
+      <div id="securityServicesListHeading">Security Services</div>
       <div className="services-grid">
         {services.map((service, index) => (
           <ServiceCard key={index} service={service} />

@@ -49,7 +49,7 @@ const HomeImgContainer = (props) => {
           </AnimateElement>
           <AnimateElement animationClass={"transitionBtmToTop"} propDelay={300}>
             <div className="servicesButton delayedDisplay">
-              <Link to="/services">
+              <Link to="/services" onClick={() => myFunction("services")}>
                 {/* onClick={myFunction("services")} */}
                 <Button variant="contained">Our Services</Button>
               </Link>

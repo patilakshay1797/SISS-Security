@@ -70,8 +70,8 @@ const HouseKeepingServicesList = () => {
   }, []);
 
   return (
-    <div className="housekeeping-services">
-      <div className="houseKeepingHeading">Housekeeping Services</div>
+    <div id="housekeepingServicesList" className="housekeeping-services">
+      <div id="houseKeepingHeading">Housekeeping Services</div>
       <div className="services-grid">
         {services.map((service, index) => (
           <div

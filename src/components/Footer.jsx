@@ -1,5 +1,5 @@
 import companyLogo from "../assets/images/Upscaled_LOGO.png";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import "../assets/css/footer.scss";
 import EmailIcon from "@mui/icons-material/Email";
@@ -12,8 +12,11 @@ import AnimateElement from "./AnimateElement";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { isMobileDevice } from "../utils/utility";
 import { companyEmailId, companyName } from "../utils/constants";
+import { ProviderMethodContext } from "../MyFunction";
+import { useContext } from "react";
 
 const Footer = ({ activePage, setPage }) => {
+  const { myFunction } = useContext(ProviderMethodContext);
   const thisDate = new Date();
   const year = thisDate.getFullYear();
   return (
@@ -46,19 +49,55 @@ const Footer = ({ activePage, setPage }) => {
               animationClass={"transitionLeftToRight"}
               propDelay={200}
             >
-              <div className="list">
+              <div className="list" onClick={() => myFunction("services")}>
                 <div className="firstList">
-                  <div className="service">Security Guards</div>
-                  <div className="service">Industrial Security</div>
-                  <div className="service">Female Security Guard</div>
-                  <div className="service">Bank Security</div>
-                  <div className="service">Bouncer & Bodyguard</div>
+                  <div className="service">
+                    <Link to="/services#securityServicesListHeading">
+                      Security Guards
+                    </Link>
+                  </div>
+                  <div className="service">
+                    <Link to="/services#securityServicesListHeading">
+                      Industrial Security
+                    </Link>
+                  </div>
+                  <div className="service">
+                    <Link to="/services#securityServicesListHeading">
+                      Female Security Guard
+                    </Link>
+                  </div>
+                  <div className="service">
+                    <Link to="/services#securityServicesListHeading">
+                      Bank Security
+                    </Link>
+                  </div>
+                  <div className="service">
+                    <Link to="/services#securityServicesListHeading">
+                      Bouncer & Bodyguard
+                    </Link>
+                  </div>
                 </div>
                 <div className="secondList">
-                  <div className="service">Security Training</div>
-                  <div className="service">Building Security</div>
-                  <div className="service">Corporate Security</div>
-                  <div className="service">Housekeeping Services</div>
+                  <div className="service">
+                    <Link to="/services#securityServicesListHeading">
+                      Security Training
+                    </Link>
+                  </div>
+                  <div className="service">
+                    <Link to="/services#securityServicesListHeading">
+                      Building Security
+                    </Link>
+                  </div>
+                  <div className="service">
+                    <Link to="/services#securityServicesListHeading">
+                      Corporate Security
+                    </Link>
+                  </div>
+                  <div className="service">
+                    <Link to="/services#houseKeepingHeading">
+                      Housekeeping Services
+                    </Link>
+                  </div>
                 </div>
               </div>
             </AnimateElement>

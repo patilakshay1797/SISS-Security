@@ -44,9 +44,10 @@ function App() {
       <Header activePage={activePage} setPage={setActivePage}></Header>
       <ProviderMethodContext.Provider value={{ myFunction: setActivePage }}>
         <Outlet></Outlet>
+
+        <ScrollToTop />
+        <Footer activePage={activePage} setPage={setActivePage}></Footer>
       </ProviderMethodContext.Provider>
-      <ScrollToTop />
-      <Footer activePage={activePage} setPage={setActivePage}></Footer>
       <div className="emailJsFloaterContainer">
         <div>
           <FloaterEmailJs></FloaterEmailJs>

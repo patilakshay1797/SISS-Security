@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "../assets/css/servicesList.scss";
 import securityService from "../assets/images/istockphoto-1227467445-612x612.jpg";
 import houseKeeping from "../assets/images/houseKeeping.png";
 import AnimateElement from "./AnimateElement";
+import { ProviderMethodContext } from "../MyFunction";
+import { useContext } from "react";
 
 const ServicesList = () => {
+  const { myFunction } = useContext(ProviderMethodContext);
+
   return (
     <div className="homeServices">
       <AnimateElement animationClass={"transitionBtmToTop"}>
@@ -28,15 +32,20 @@ const ServicesList = () => {
             animationClass={"transitionBtmToTop"}
             propRootMargin="600px"
           >
-            <div className="securityInfo card">
-              <div className="xlargeFont">Security Services</div>
-              <div className="info normalFont">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam quod hic iusto repellat perspiciatis quos eius amet
-                vero, recusandae aperiam, error possimus commodi ea, praesentium
-                magni omnis provident. Aliquid, mollitia.
+            <Link
+              to="/services#securityServicesList"
+              onClick={() => myFunction("services")}
+            >
+              <div className="securityInfo card">
+                <div className="xlargeFont">Security Services</div>
+                <div className="info normalFont">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam quod hic iusto repellat perspiciatis quos eius amet
+                  vero, recusandae aperiam, error possimus commodi ea,
+                  praesentium magni omnis provident. Aliquid, mollitia.
+                </div>
               </div>
-            </div>
+            </Link>
           </AnimateElement>
         </div>
         <div className="housekeepingService">
@@ -53,15 +62,20 @@ const ServicesList = () => {
             animationClass={"transitionBtmToTop"}
             propRootMargin="600px"
           >
-            <div className="houseKeepingInfo card">
-              <div className="xlargeFont">Housekeeping Services</div>
-              <div className="info normalFont">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam quod hic iusto repellat perspiciatis quos eius amet
-                vero, recusandae aperiam, error possimus commodi ea, praesentium
-                magni omnis provident. Aliquid, mollitia.
+            <Link
+              to="/services#housekeepingServicesList"
+              onClick={() => myFunction("services")}
+            >
+              <div className="houseKeepingInfo card">
+                <div className="xlargeFont">Housekeeping Services</div>
+                <div className="info normalFont">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Numquam quod hic iusto repellat perspiciatis quos eius amet
+                  vero, recusandae aperiam, error possimus commodi ea,
+                  praesentium magni omnis provident. Aliquid, mollitia.
+                </div>
               </div>
-            </div>
+            </Link>
           </AnimateElement>
         </div>
       </div>
