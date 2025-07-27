@@ -5,6 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useState, useEffect, useRef } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import EmailIcon from "@mui/icons-material/Email";
+import { companyEmailId } from "../utils/constants";
 
 const Header = ({ activePage, setPage }) => {
   // let url = useLocation();
@@ -116,9 +117,7 @@ const Header = ({ activePage, setPage }) => {
                   <EmailIcon></EmailIcon> <div>Contact Support</div>
                 </div>
                 <div className="reachToUs"></div>
-                <a href="mailto:sisssecurity@gmail.com">
-                  sisssecurity@gmail.com
-                </a>
+                <a href={"mailto:" + companyEmailId}>{companyEmailId}</a>
               </div>
             </div>
           )}

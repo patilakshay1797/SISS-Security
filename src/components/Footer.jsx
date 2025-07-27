@@ -11,6 +11,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import AnimateElement from "./AnimateElement";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { isMobileDevice } from "../utils/utility";
+import { companyEmailId, companyName } from "../utils/constants";
 
 const Footer = ({ activePage, setPage }) => {
   const thisDate = new Date();
@@ -107,9 +108,7 @@ const Footer = ({ activePage, setPage }) => {
                 </div>
                 <div className="info">
                   <EmailIcon></EmailIcon>
-                  <a href="mailto:sisssecurity@gmail.com">
-                    sisssecurity@gmail.com
-                  </a>
+                  <a href={"mailto:" + companyEmailId}>{companyEmailId}</a>
                 </div>
                 {/* <div className="info">
                 <MapIcon></MapIcon>
@@ -169,7 +168,9 @@ const Footer = ({ activePage, setPage }) => {
           {/* )} */}
         </div>
       </footer>
-      <div className="disclaimer">Copyright © {year} SISS Security</div>
+      <div className="disclaimer">
+        Copyright © {year} {companyName}
+      </div>
     </>
   );
 };

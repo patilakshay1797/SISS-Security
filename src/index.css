@@ -11,6 +11,7 @@
   --pure-black: #000000;
   --dark-shade-black: rgba(13, 14, 13, 1);
   --light-icon-color: rgba(204, 204, 204, 1);
+  --light-blue-purple: #96a4f1;
 
   /* font constant */
   --small-font: 0.8rem;
@@ -169,7 +170,7 @@ a {
   transition: all 0.2s linear;
   border-radius: 1rem;
   &:hover {
-    box-shadow: 0 0px 5px rgba(255, 255, 255, 0.1),
+    box-shadow: 0 0px 15px rgba(255, 255, 255, 0.1),
       0 0 5px rgba(255, 255, 255, 0.2);
   }
 }

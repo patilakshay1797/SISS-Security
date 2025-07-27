@@ -7,6 +7,7 @@ import "../assets/css/contactUs.scss";
 import HomeImgContainer from "./HomeImgContainer";
 import aboutUsHomeImg from "../assets/images/about_us_home.png";
 import AnimateElement from "./AnimateElement";
+import { companyEmailId } from "../utils/constants";
 
 const ContactUs = () => {
   const aboutUsLoadingImages = [aboutUsHomeImg];
@@ -17,41 +18,43 @@ const ContactUs = () => {
         isHomePage="false"
         pageName="Contact Us"
       ></HomeImgContainer>
-      <div className="contactUsWaysContainer">
-        <AnimateElement animationClass={"transitionBtmToTop"}>
-          <div className="reachUsWrapper">
-            <div className="icon">
-              <LocalPhoneOutlinedIcon></LocalPhoneOutlinedIcon>
-              <div className="reachToUs">Reach Us by Phone</div>
-            </div>
+      <div className="contactsContainerForm">
+        <div className="contactUsWaysContainer">
+          <AnimateElement animationClass={"transitionBtmToTop"}>
+            <div className="reachUsWrapper">
+              <div className="icon">
+                <LocalPhoneOutlinedIcon></LocalPhoneOutlinedIcon>
+                <div className="reachToUs">Reach Us by Phone</div>
+              </div>
 
-            <div className="phoneNo">+91 8888888888</div>
-          </div>
-        </AnimateElement>
-        <AnimateElement animationClass={"transitionBtmToTop"}>
-          <div className="reachUsWrapper">
-            <div className="icon">
-              <EmailIcon></EmailIcon>
-              <div className="reachToUs">write to us</div>
+              <div className="phoneNo">+91 8888888888</div>
             </div>
+          </AnimateElement>
+          <AnimateElement animationClass={"transitionBtmToTop"}>
+            <div className="reachUsWrapper">
+              <div className="icon">
+                <EmailIcon></EmailIcon>
+                <div className="reachToUs">write to us</div>
+              </div>
 
-            <div className="phoneNo email">
-              <a href="mailto:sisssecurity@gmail.com">sisssecurity@gmail.com</a>
+              <div className="phoneNo email">
+                <a href={"mailto:" + companyEmailId}>{companyEmailId}</a>
+              </div>
             </div>
-          </div>
-        </AnimateElement>
-        <AnimateElement animationClass={"transitionBtmToTop"}>
-          <div className="reachUsWrapper">
-            <div className="icon">
-              <MapIcon></MapIcon>
-              <div className="reachToUs">Meet Us at</div>
-            </div>
+          </AnimateElement>
+          <AnimateElement animationClass={"transitionBtmToTop"}>
+            <div className="reachUsWrapper">
+              <div className="icon">
+                <MapIcon></MapIcon>
+                <div className="reachToUs">Meet Us at</div>
+              </div>
 
-            <div className="phoneNo">Pimpri Chinchwad, Pune</div>
-          </div>
-        </AnimateElement>
+              <div className="phoneNo">Pimpri Chinchwad, Pune</div>
+            </div>
+          </AnimateElement>
+        </div>
+        <EmailJSForm></EmailJSForm>
       </div>
-      <EmailJSForm></EmailJSForm>
       <MapLocation></MapLocation>
     </main>
   );

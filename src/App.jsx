@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, createContext } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -18,6 +18,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 import { delayedDisplay } from "./utils/utility";
 import AnimateElement from "./components/AnimateElement";
 import { useLocation } from "react-router-dom";
+import { ProviderMethodContext } from "./MyFunction";
 
 function App() {
   const [activePage, setActivePage] = useState(getPathLabel(useLocation()));
@@ -41,7 +42,9 @@ function App() {
   return (
     <div className="app">
       <Header activePage={activePage} setPage={setActivePage}></Header>
-      <Outlet></Outlet>
+      <ProviderMethodContext.Provider value={{ myFunction: setActivePage }}>
+        <Outlet></Outlet>
+      </ProviderMethodContext.Provider>
       <ScrollToTop />
       <Footer activePage={activePage} setPage={setActivePage}></Footer>
       <div className="emailJsFloaterContainer">

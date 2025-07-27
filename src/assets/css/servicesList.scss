@@ -12,7 +12,11 @@
     }
   }
   .services {
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 5rem;
     margin-top: 1.5rem;
     a {
       color: #fff;
@@ -20,20 +24,46 @@
     .securityService,
     .housekeepingService {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
+      // justify-content: center;
+      // align-items: center;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+      top: 0;
       .transitionBtmToTop {
-        width: 35%;
+        // width: 35%;
         .securityInfo,
         .houseKeepingInfo {
+          position: absolute;
+          top: -146px;
+          // bottom: 30px;
+          opacity: 0.9;
+          width: 100%;
+          // display: none;
           padding: 2rem;
+          border-radius: 0px 0px 1rem 1rem;
           .info {
             margin-top: 1rem;
+            transition: height 0.3s ease-in-out;
+            // height: 0;
+            overflow: hidden;
           }
           .xlargeFont {
             color: var(--containedBg);
             font-weight: 700;
+          }
+        }
+      }
+      &:hover {
+        .transitionBtmToTop {
+          .securityInfo,
+          .houseKeepingInfo {
+            // display: block;
+            opacity: 1;
+            // .info {
+            //   display: block;
+            //   height: 6rem;
+            // }
           }
         }
       }
@@ -57,7 +87,7 @@
       &:hover {
         .displayOnHover {
           // display: block;
-          opacity: 0.8;
+          // opacity: 0.8;
           font-size: var(--xlarge-font);
           color: var(--containedBg);
         }
@@ -65,7 +95,7 @@
         &::after {
           content: "";
           position: absolute;
-          background: rgba(0, 0, 0, 0.6);
+          // background: rgba(0, 0, 0, 0.6);
           top: 0px;
           bottom: 0px;
           left: 0px;
@@ -86,7 +116,7 @@
       }
     }
     .securityService {
-      margin-bottom: 3rem;
+      // margin-bottom: 3rem;
     }
   }
 }
@@ -103,6 +133,8 @@
       }
     }
     .services {
+      gap: 2rem;
+      padding-bottom: 2.5rem;
       .securityService,
       .housekeepingService {
         flex-direction: column;
@@ -112,9 +144,17 @@
           width: 100%;
           .securityInfo,
           .houseKeepingInfo {
+            top: -7.5rem;
             padding: 1rem;
+            opacity: 1;
+            .info {
+              height: 4.5rem;
+            }
           }
         }
+      }
+      .securityService {
+        margin-bottom: 1.5rem;
       }
     }
   }

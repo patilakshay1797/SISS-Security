@@ -8,7 +8,7 @@ import AnimateElement from "./AnimateElement";
 
 export const EmailJSForm = () => {
   return (
-    <div className="homeContactUsContainer">
+    <div id="contactUsForm" className="homeContactUsContainer">
       <ContactUsForm></ContactUsForm>
       <AnimateElement animationClass={"transitionBtmToTop"}>
         <div className="socialMediaContainer">

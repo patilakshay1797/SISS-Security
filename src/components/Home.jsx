@@ -114,6 +114,30 @@ const Home = () => {
               >
                 <li>Registered Under MSME (Udyag Aadhaar).</li>
               </AnimateElement>
+              <AnimateElement
+                animationClass={"transitionLeftToRight"}
+                propDelay={800}
+              >
+                <li>Registered Under CIN.</li>
+              </AnimateElement>
+              <AnimateElement
+                animationClass={"transitionLeftToRight"}
+                propDelay={1000}
+              >
+                <li>Registered Shop Act & Establishments.</li>
+              </AnimateElement>
+              <AnimateElement
+                animationClass={"transitionLeftToRight"}
+                propDelay={1200}
+              >
+                <li>Registered Under GST.</li>
+              </AnimateElement>
+              <AnimateElement
+                animationClass={"transitionLeftToRight"}
+                propDelay={1400}
+              >
+                <li>Registered Under PAN.</li>
+              </AnimateElement>
             </ul>
           </div>
           <div className="certificateList">
@@ -135,6 +159,26 @@ const Home = () => {
                 propDelay={600}
               >
                 <li>Registered Under Employees State Insurance Corporation.</li>
+              </AnimateElement>
+              <AnimateElement
+                animationClass={"transitionRightToLeft"}
+                propDelay={800}
+              >
+                <li>Registered Under Ministry of Corporate Affairs.</li>
+              </AnimateElement>
+              <AnimateElement
+                animationClass={"transitionRightToLeft"}
+                propDelay={1000}
+              >
+                <li>
+                  Registered Under e-Governance Infrastructure Limited. (NSDL)
+                </li>
+              </AnimateElement>
+              <AnimateElement
+                animationClass={"transitionRightToLeft"}
+                propDelay={1200}
+              >
+                <li>Registered Under Maharashtra Labour Welfare Board.</li>
               </AnimateElement>
             </ul>
           </div>

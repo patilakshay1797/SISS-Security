@@ -15,7 +15,10 @@ const ServicesList = () => {
       </AnimateElement>
       <div className="services">
         <div className="securityService">
-          <AnimateElement animationClass={"transitionBtmToTop"}>
+          <AnimateElement
+            animationClass={"transitionBtmToTop"}
+            propRootMargin="600px"
+          >
             <div className="securityImg">
               <div className="displayOnHover">Security Services</div>
               <img src={securityService}></img>
@@ -23,7 +26,7 @@ const ServicesList = () => {
           </AnimateElement>
           <AnimateElement
             animationClass={"transitionBtmToTop"}
-            propRootMargin="70px"
+            propRootMargin="600px"
           >
             <div className="securityInfo card">
               <div className="xlargeFont">Security Services</div>
@@ -37,7 +40,10 @@ const ServicesList = () => {
           </AnimateElement>
         </div>
         <div className="housekeepingService">
-          <AnimateElement animationClass={"transitionBtmToTop"}>
+          <AnimateElement
+            animationClass={"transitionBtmToTop"}
+            propRootMargin="600px"
+          >
             <div className="houseKeepingImg">
               <div className="displayOnHover">Housekeeping Services</div>
               <img src={houseKeeping}></img>
@@ -45,7 +51,7 @@ const ServicesList = () => {
           </AnimateElement>
           <AnimateElement
             animationClass={"transitionBtmToTop"}
-            propRootMargin="70px"
+            propRootMargin="600px"
           >
             <div className="houseKeepingInfo card">
               <div className="xlargeFont">Housekeeping Services</div>

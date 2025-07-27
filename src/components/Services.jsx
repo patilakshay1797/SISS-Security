@@ -2,6 +2,8 @@ import ServicesList from "./ServicesList";
 import HomeImgContainer from "./HomeImgContainer";
 import { ContactUsLinkHighlight } from "./ContactUsLinkHighlight";
 import aboutUsHomeImg from "../assets/images/about_us_home.png";
+import SecurityServicesList from "./SecurityServicesList";
+import HouseKeepingServicesList from "./HouseKeepingServicesList";
 
 const Services = () => {
   const servicesLoadingImages = [aboutUsHomeImg];
@@ -13,6 +15,8 @@ const Services = () => {
         pageName="Services"
       ></HomeImgContainer>
       <ServicesList></ServicesList>
+      <SecurityServicesList></SecurityServicesList>
+      <HouseKeepingServicesList></HouseKeepingServicesList>
       <ContactUsLinkHighlight></ContactUsLinkHighlight>
     </main>
   );

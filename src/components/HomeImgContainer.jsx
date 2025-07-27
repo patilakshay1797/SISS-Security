@@ -2,8 +2,12 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "../assets/css/homeImgContainer.scss";
 import AnimateElement from "./AnimateElement";
+import { companyName } from "../utils/constants";
+import { ProviderMethodContext } from "../MyFunction";
+import { useContext } from "react";
 
 const HomeImgContainer = (props) => {
+  const { myFunction } = useContext(ProviderMethodContext);
   return (
     <div
       className={
@@ -28,7 +32,7 @@ const HomeImgContainer = (props) => {
         <div className="homeLandPageContent">
           <AnimateElement animationClass={"transitionBtmToTop"}>
             <div className="headingTag delayedDisplay">
-              Welcome to SISS Security
+              Welcome to {companyName}
             </div>
           </AnimateElement>
           <AnimateElement animationClass={"transitionBtmToTop"} propDelay={100}>
@@ -45,7 +49,7 @@ const HomeImgContainer = (props) => {
           </AnimateElement>
           <AnimateElement animationClass={"transitionBtmToTop"} propDelay={300}>
             <div className="servicesButton delayedDisplay">
-              <Link to="/services">
+              <Link to="/services" onClick={myFunction("services")}>
                 <Button variant="contained">Our Services</Button>
               </Link>
             </div>

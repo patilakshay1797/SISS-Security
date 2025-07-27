@@ -1,6 +1,7 @@
 import { Shield, Star, Group, Handshake } from "@mui/icons-material";
 import "../assets/css/whyUs.scss";
 import AnimateElement from "./AnimateElement";
+import { companyName } from "../utils/constants";
 
 const whyUsData = [
   {
@@ -33,7 +34,7 @@ const WhyUs = () => {
   return (
     <div className="whyUsContainer">
       <div className="whyUsContentWrapper">
-        <h2 className="whyUsText">Why Choose SISS Security?</h2>
+        <h2 className="whyUsText">Why Choose {companyName}?</h2>
         <p className="whyUsDescription">
           Discover how Swamini Independent Security Services sets itself apart
           through dedication, professionalism, and exceptional service delivery.

@@ -1,0 +1,94 @@
+.security-services {
+  .securityServicesListHeading {
+    color: var(--containedBg);
+    font-size: var(--xxlarge-font);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+  }
+  padding: 3rem 5rem;
+  background-color: var(--pure-black);
+  @media screen and (max-width: 992px) {
+    padding: 2rem 1.5rem;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .service-card {
+    background: var(--card-background-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(60px);
+
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .service-info {
+      padding: 1rem;
+
+      h3 {
+        font-size: var(--slarge-font);
+        font-weight: 600;
+        margin: 0.5rem 0;
+        color: var(--containedBg);
+        @media (max-width: 992px) {
+          font-size: var(--large-font);
+        }
+      }
+
+      p {
+        font-size: var(--normal-font);
+        color: var(--white-text-color);
+        margin-bottom: 1rem;
+        @media (max-width: 992px) {
+          font-size: var(--slarge-font);
+        }
+      }
+
+      .cta {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--light-blue-purple);
+        cursor: pointer;
+        font-size: var(--small-font);
+        letter-spacing: 0.5px;
+        position: relative;
+        display: inline-block;
+        @media (max-width: 992px) {
+          font-size: var(--normal-font);
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: var(--light-blue-purple);
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
