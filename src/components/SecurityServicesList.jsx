@@ -2,6 +2,8 @@ import { useInView } from "react-intersection-observer";
 import "../assets/css/SecurityServicesList.scss";
 import testImg from "../assets/images/about_us_home.png";
 import { HashLink as Link } from "react-router-hash-link";
+import { ProviderMethodContext } from "../MyFunction";
+import { useContext } from "react";
 
 const services = [
   {
@@ -55,6 +57,7 @@ const services = [
 
 const ServiceCard = ({ service }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.4 });
+  const { myFunction } = useContext(ProviderMethodContext);
 
   return (
     <div ref={ref} className={`service-card card ${inView ? "visible" : ""}`}>
@@ -62,7 +65,11 @@ const ServiceCard = ({ service }) => {
       <div className="service-info">
         <h3>{service.title}</h3>
         <p>{service.description}</p>
-        <Link to="/contactus#contactUsForm" className="cta">
+        <Link
+          to="/contactus#contactUsForm"
+          className="cta"
+          onClick={() => myFunction("contactus")}
+        >
           Get Quote
         </Link>
       </div>
