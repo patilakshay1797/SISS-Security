@@ -6,8 +6,10 @@ import { useState, useEffect, useRef } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import EmailIcon from "@mui/icons-material/Email";
 import { companyEmailId } from "../utils/constants";
+import useScrollPosition from "../utils/customHooks/useScrollPosition";
 
 const Header = ({ activePage, setPage }) => {
+  const scrollPosition = useScrollPosition();
   // let url = useLocation();
   // const path = url.pathname.split("/")[1];
   // if (path != activePage) {
@@ -75,7 +77,14 @@ const Header = ({ activePage, setPage }) => {
   return (
     <>
       <div className={`companyLogo ${mobileMenuVisible ? "scaleIogo" : ""}`}>
-        <img src={logo} />
+        <img
+          className={`${
+            scrollPosition > 500 && window.innerWidth > 992
+              ? "reduceLogoWidth"
+              : ""
+          }`}
+          src={logo}
+        />
       </div>
       <header>
         <div

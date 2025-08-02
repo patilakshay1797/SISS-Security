@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import "../assets/css/HouseKeepingServicesList.scss";
 import testImg from "../assets/images/about_us_home.png";
 import { HashLink as Link } from "react-router-hash-link";
+import { ProviderMethodContext } from "../MyFunction";
+import { useContext } from "react";
 
 const services = [
   {
@@ -43,6 +45,7 @@ const services = [
 
 const HouseKeepingServicesList = () => {
   const observerRef = useRef([]);
+  const { myFunction } = useContext(ProviderMethodContext);
 
   useEffect(() => {
     const options = {
@@ -83,7 +86,11 @@ const HouseKeepingServicesList = () => {
             <div className="content">
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <Link to="/contactus#contactUsForm" className="cta">
+              <Link
+                to="/contactus#contactUsForm"
+                className="cta"
+                onClick={() => myFunction("contactus")}
+              >
                 GET QUOTE
               </Link>
             </div>
