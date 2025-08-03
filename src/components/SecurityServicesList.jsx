@@ -134,12 +134,12 @@ const services = [
       "Multi-skilled guards for both security and transportation support.",
     image: testImg,
   },
-  {
-    title: "Security Patrolling",
-    description:
-      "Regular patrols to deter threats and maintain safety across premises.",
-    image: testImg,
-  },
+  // {
+  //   title: "Security Patrolling",
+  //   description:
+  //     "Regular patrols to deter threats and maintain safety across premises.",
+  //   image: testImg,
+  // },
   {
     title: "Unarmed Guards",
     description:
