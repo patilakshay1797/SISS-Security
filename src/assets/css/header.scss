@@ -21,19 +21,41 @@ header {
       gap: 5rem;
 
       li {
-        border-bottom: 3px solid var(--primary-blue-color);
-        &:hover {
-          border-bottom: 3px solid var(--white-text-color);
-        }
+        // border-bottom: 3px solid var(--primary-blue-color);
+        position: relative;
+
         a {
           text-decoration: none;
           color: var(--white-text-color);
+          &:after {
+            transition: all 0.3s ease;
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0px;
+            height: 2px;
+            width: 0%;
+            background: var(--white-text-color);
+          }
+          &:hover {
+            // border-bottom: 3px solid var(--white-text-color);
+            &:after {
+              width: 100%;
+            }
+          }
         }
         &.activePage {
           a {
             color: var(--containedBg);
+            &:after {
+              background: var(--containedBg);
+              width: 30%;
+            }
+            &:hover:after {
+              width: 100%;
+            }
           }
-          border-bottom: 3px solid var(--containedBg);
+          // border-bottom: 3px solid var(--containedBg);
         }
       }
     }
@@ -127,6 +149,9 @@ header {
             border: 2px solid var(--card-background-color);
             &:hover {
               border: 2px solid var(--white-text-color);
+            }
+            &:after {
+              content: none;
             }
           }
           &.activePage {
