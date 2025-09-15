@@ -1,8 +1,8 @@
 .floaterEmailWrapper {
   .emailIcon {
     position: fixed;
-    bottom: 2.5rem;
-    right: 2.5rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
     padding: 0.6rem;
     border-radius: 50%;
     width: 3.4rem;
@@ -19,7 +19,7 @@
   }
   .emailFloaterFormWrapper {
     position: fixed;
-    bottom: 6.5rem;
+    bottom: 5.2rem;
     right: -100rem;
     z-index: 1000;
     transition: all 0.5s ease-in-out;
@@ -37,7 +37,7 @@
         0 0 5px rgba(255, 255, 255, 0.2);
       .formHeadingContainer {
         margin: -1rem -1rem 0rem -1rem;
-        padding: 1rem;
+        padding: 0.8rem;
         background-color: #1a1a1a;
         border-radius: 1rem 1rem 0rem 0rem;
         .reachUs {
@@ -46,22 +46,23 @@
           align-items: center;
           gap: 1rem;
           margin-bottom: 0.5rem;
-          font-size: var(--xxlarge-font);
+          font-size: var(--large-font);
           font-weight: 700;
           color: var(--containedBg);
           .MuiSvgIcon-root {
-            font-size: var(--xxlarge-font);
+            font-size: var(--large-font);
           }
         }
         .fillOutForm {
+          font-size: var(--normal-font);
           color: #ccc;
         }
       }
       .formContainer {
-        padding: 1rem 0rem;
+        padding: 1rem 0rem 0rem;
         .form {
           display: flex;
-          gap: 1.2rem;
+          gap: 1rem;
           flex-wrap: wrap;
           .MuiFormControl-root {
             width: calc(100% - 0.6rem);
@@ -71,21 +72,68 @@
             .MuiFormLabel-root {
             }
             .MuiInputBase-root {
+              height: 2.5rem;
               #outlined-basic {
               }
             }
           }
         }
         .sendButton {
-          margin-top: 2rem;
+          margin-top: 0.5rem;
+          display: flex;
+          gap: 2rem;
           .MuiButtonBase-root {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 0.8rem;
+
             background-color: var(--primary-blue-color) !important;
             &:hover {
               background-color: #084d9a !important;
+            }
+            &.Mui-disabled {
+              background-color: rgba(0, 0, 0, 0.12) !important;
+              .MuiCircularProgress-root {
+                width: 1.5rem !important;
+                height: 1.5rem !important;
+              }
+            }
+          }
+        }
+        .mailFeedBack {
+          margin-top: 0.5rem;
+
+          .resultMsg {
+            .flexBox {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+            }
+            progress {
+              width: 100%;
+              height: 0.5rem;
+              position: relative;
+              bottom: -2.9px;
+            }
+            progress::-webkit-progress-value {
+              background: #4caf50; /* Or any desired color */
+            }
+            progress::-moz-progress-bar {
+              background: #4caf50; /* Or any desired color */
+            }
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: white;
+            .MuiSvgIcon-root {
+              font-size: 1.8rem;
+            }
+            &.successMsg {
+              background-color: #4caf50;
+            }
+            &.errorMsg {
+              background-color: #f44336;
             }
           }
         }
@@ -126,6 +174,17 @@
     .emailFloaterFormWrapper {
       .contactFormContainer {
         width: 85vw;
+        .formContainer {
+          padding: 2rem 0rem;
+          .form {
+            gap: 1.5rem;
+            .MuiFormControl-root {
+              .MuiInputBase-root {
+                height: 3rem;
+              }
+            }
+          }
+        }
       }
     }
   }

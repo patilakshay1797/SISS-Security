@@ -5,7 +5,7 @@
   align-items: center;
   gap: 2rem;
   .aboutUsInfoImgContainer {
-    height: 65vh;
+    height: 47vh;
     img {
       height: 100%;
       width: 90%;
@@ -18,16 +18,144 @@
     width: 40%;
     font-size: var(--large-font);
     line-height: 2rem;
-    .whoWeAre {
-      margin-bottom: 2rem;
-      color: var(--containedBg);
+    .centerDivContent {
+      align-items: start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0.2rem;
+        top: 0;
+        bottom: 0;
+        left: -1rem;
+        background-color: var(--containedBg);
+      }
+      .whoWeAre {
+        // margin-bottom: 2rem;
+        color: var(--containedBg);
+        // line-height: 2.5rem;
+      }
     }
     .aboutUsInfoMsgWrapper {
       span {
         color: var(--containedBg);
       }
     }
+    .ourFoundation {
+      margin-top: 2rem;
+    }
   }
+}
+
+.foundationExpertisePromise {
+  // margin: 2rem 5rem;
+  padding: 2rem 2rem 1.5rem 2rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  // align-items: center;
+  // text-align: center;
+
+  .promise {
+    position: relative;
+    padding: 2rem 2rem 2rem 3rem;
+    width: 37%;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0.2rem;
+      top: 2rem;
+      bottom: 2rem;
+      left: 1.5rem;
+      background-color: var(--containedBg);
+      // @media screen and (max-width: 768px) {
+      //   width: 100%;
+      //   height: 0.2rem;
+      //   right: 0;
+      //   top: -1.58rem;
+      //   left: 0;
+      // }
+    }
+  }
+  .clubTwoOfThree {
+    display: flex;
+    gap: 3rem;
+    width: 37%;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+    .foundation,
+    .expertise {
+      // width: 50%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .expertise {
+      padding: 2rem 2rem 2rem 3rem;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0.2rem;
+        top: 2rem;
+        bottom: 2rem;
+        left: 1.5rem;
+        background-color: var(--containedBg);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      // .expertise::after {
+      //   width: 100%;
+      //   height: 0.2rem;
+      //   right: 0;
+      //   top: -1.58rem;
+      //   left: 0;
+      // }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 1.5rem 8rem;
+
+    .promise {
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0.5rem;
+    margin: 0.5rem 1.5rem 0rem 1.5rem;
+    gap: 1rem;
+  }
+}
+
+.lableWithIcon {
+  position: relative;
+  font-size: var(--xlarge-font);
+  color: var(--containedBg);
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  .MuiSvgIcon-root {
+    font-size: var(--xlarge-font);
+  }
+}
+.lableWithIconDescription {
+  padding-top: 1rem;
+  font-size: var(--slarge-font);
+  line-height: var(--xlarge-font);
 }
 
 @media screen and (max-width: 992px) {
@@ -68,7 +196,7 @@
         gap: 1rem;
         .missionWrapper,
         .vissionWrapper {
-          width: 90%;
+          width: 100%;
         }
       }
     }

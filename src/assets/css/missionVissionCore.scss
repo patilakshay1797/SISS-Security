@@ -1,11 +1,11 @@
 .homeMissionVissionCoreContainer {
-  padding: 3rem 2rem 1.5rem 2rem;
+  padding: 1rem 2rem 1.5rem 2rem;
   text-align: center;
   .missionVissionWrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    // align-items: center;
+    gap: 3rem;
     margin-bottom: 1.5rem;
 
     .vissionWrapper,
@@ -14,7 +14,7 @@
       padding: 1.5rem;
       background-color: var(--card-background-color);
       border-radius: 1rem;
-      width: 35%;
+      width: 37%;
       text-align: left;
       position: relative;
       border: 2px rgba(255, 255, 255, 0.1) solid;
@@ -119,10 +119,11 @@
 @media screen and (max-width: 768px) {
   .homeMissionVissionCoreContainer {
     .missionVissionWrapper {
+      padding: 0rem 1.5rem;
       flex-direction: column;
       .vissionWrapper,
       .missionWrapper {
-        width: 80%;
+        width: 100%;
       }
     }
     .coreValuesWrapper {

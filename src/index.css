@@ -29,28 +29,28 @@
   --landing-img-height: 75vh;
 }
 .smallFont {
-  font-size: var(--small-font);
+  font-size: var(--small-font) !important;
 }
 .normalFont {
-  font-size: var(--normal-font);
+  font-size: var(--normal-font) !important;
 }
 .largeFont {
-  font-size: var(--large-font);
+  font-size: var(--large-font) !important;
 }
 .xlargeFont {
-  font-size: var(--xlarge-font);
+  font-size: var(--xlarge-font) !important;
 }
 .xxlargeFont {
-  font-size: var(--xxlarge-font);
+  font-size: var(--xxlarge-font) !important;
 }
 .xxxlargeFont {
-  font-size: var(--xxxlarge-font);
+  font-size: var(--xxxlarge-font) !important;
 }
 .xxxxlargeFont {
-  font-size: var(--xxxxlarge-font);
+  font-size: var(--xxxxlarge-font) !important;
 }
 .bigFont {
-  font-size: var(--big-font);
+  font-size: var(--big-font) !important;
 }
 @media screen and (max-width: 992px) {
   :root {
@@ -211,11 +211,20 @@ a {
     font-size: var(--large-font);
   }
 }
+.centerDivContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .displayNone {
   display: none;
 }
 .opacityZero {
   opacity: 0;
+}
+.flexBox {
+  display: flex;
 }
 .transitionBtmToTop {
   animation: transitionBtmToTop 0.5s ease-in-out forwards;

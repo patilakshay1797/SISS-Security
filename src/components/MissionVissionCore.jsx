@@ -67,7 +67,7 @@ const MissionVissionCore = () => {
             >
               <div className="integrity">
                 <div className="dot"></div>
-                <div className="value">Professionalism</div>
+                <div className="value">Trust</div>
               </div>
             </AnimateElement>
             <AnimateElement

@@ -30,8 +30,9 @@ const Footer = ({ activePage, setPage }) => {
             <div className="companyName">
               <div className="presence">Our presence all over Maharashtra</div>{" "}
               <div className="allPlaces">
-                Sambhaji nagar, Pune, Sangli, Beed and many more cities. our
-                customers are our priority and we are always ready to help you.
+                Sambhaji nagar, Pune, Kolhapur, Nashik, Nagpur and many more
+                cities. our customers are our priority and we are always ready
+                to help you.
               </div>
             </div>
           </AnimateElement>
@@ -118,11 +119,25 @@ const Footer = ({ activePage, setPage }) => {
               <div className="list">
                 <div className="address">
                   <LocationOnIcon></LocationOnIcon>
-                  <div>Plot no 15, Sambhaji nagar, Maharashtra</div>
+                  <div>
+                    Flat No. 01, Plot No. 37, Anuradha Apartment, Swapnnagari,
+                    Garkheda Parisar Chh. Sambhaji Nagar (Aurangabad),
+                    Maharashtra - 431005.
+                  </div>
                 </div>
                 <div className="address">
                   <LocationOnIcon></LocationOnIcon>
-                  <div>Plot no 15, Rajyog Colony, Primpri Chinchwad, Pune </div>
+                  <div>
+                    Flat No. 05, Narayan Vihar, B Wing, Rajendra Nagar (Bhosale
+                    Nagar), Near Bird School, Kolhapur, 416013.
+                  </div>
+                </div>
+                <div className="address">
+                  <LocationOnIcon></LocationOnIcon>
+                  <div>
+                    Flat No. 05, Plot No. 15,16,17, Krishna Heritage, Rajyog
+                    Colony, Walekar Wadi, Chinchwad, Pune - 411033.
+                  </div>
                 </div>
               </div>
             </AnimateElement>

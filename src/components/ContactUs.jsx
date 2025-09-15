@@ -8,6 +8,7 @@ import HomeImgContainer from "./HomeImgContainer";
 import aboutUsHomeImg from "../assets/images/about_us_home.png";
 import AnimateElement from "./AnimateElement";
 import { companyEmailId } from "../utils/constants";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const ContactUs = () => {
   const aboutUsLoadingImages = [aboutUsHomeImg];
@@ -34,7 +35,7 @@ const ContactUs = () => {
             <div className="reachUsWrapper">
               <div className="icon">
                 <EmailIcon></EmailIcon>
-                <div className="reachToUs">write to us</div>
+                <div className="reachToUs">Write to us @</div>
               </div>
 
               <div className="phoneNo email">
@@ -42,14 +43,35 @@ const ContactUs = () => {
               </div>
             </div>
           </AnimateElement>
+        </div>
+        <div className="reachUsWrapper addresses">
           <AnimateElement animationClass={"transitionBtmToTop"}>
-            <div className="reachUsWrapper">
-              <div className="icon">
-                <MapIcon></MapIcon>
-                <div className="reachToUs">Meet Us at</div>
-              </div>
+            <div className="icon">
+              <MapIcon></MapIcon>
+              <div className="reachToUs">Meet Us at</div>
+            </div>
 
-              <div className="phoneNo">Pimpri Chinchwad, Pune</div>
+            <div className="phoneNo normalFont">
+              <LocationOnIcon></LocationOnIcon>
+              <span>
+                Flat No. 01, Plot No. 37, Anuradha Apartment, Swapnnagari,
+                Garkheda Parisar Chh. Sambhaji Nagar (Aurangabad), Maharashtra -
+                431005.
+              </span>
+            </div>
+            <div className="phoneNo normalFont">
+              <LocationOnIcon></LocationOnIcon>
+              <span>
+                Flat No. 05, Narayan Vihar, B Wing, Rajendra Nagar (Bhosale
+                Nagar), Near Bird School, Kolhapur, 416013.
+              </span>
+            </div>
+            <div className="phoneNo normalFont">
+              <LocationOnIcon></LocationOnIcon>
+              <span>
+                Flat No. 05, Plot No. 15,16,17, Krishna Heritage, Rajyog Colony,
+                Walekar Wadi, Chinchwad, Pune - 411033.
+              </span>
             </div>
           </AnimateElement>
         </div>

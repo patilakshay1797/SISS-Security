@@ -54,6 +54,58 @@ const logos = [
   starAgri,
   supreme,
   ultratech,
+  acoem,
+  aptPack,
+  axis,
+  bgshirke,
+  delux,
+  emco,
+  envea,
+  hitech,
+  hindustan,
+  isc,
+  krinshindan,
+  lamifabs,
+  meadows,
+  milan,
+  mset,
+  ncml,
+  nslSugars,
+  nslTextile,
+  orient,
+  randen,
+  renuka,
+  sidhi,
+  som,
+  starAgri,
+  supreme,
+  ultratech,
+  acoem,
+  aptPack,
+  axis,
+  bgshirke,
+  delux,
+  emco,
+  envea,
+  hitech,
+  hindustan,
+  isc,
+  krinshindan,
+  lamifabs,
+  meadows,
+  milan,
+  mset,
+  ncml,
+  nslSugars,
+  nslTextile,
+  orient,
+  randen,
+  renuka,
+  sidhi,
+  som,
+  starAgri,
+  supreme,
+  ultratech,
 ];
 
 const ClientLogoSlider = () => {
@@ -66,18 +118,21 @@ const ClientLogoSlider = () => {
     const animateSlider = () => {
       if (window.innerWidth >= 768) {
         animation = slider.animate(
-          [{ transform: "translateX(0)" }, { transform: "translateX(-50%)" }],
+          [
+            { transform: "translateX(50%)" },
+            { transform: "translateX(-400%)" },
+          ],
           {
-            duration: 10000,
+            duration: 50000,
             iterations: Infinity,
             easing: "linear",
           }
         );
       } else {
         animation = slider.animate(
-          [{ transform: "translateY(0)" }, { transform: "translateY(-50%)" }],
+          [{ transform: "translateY(0)" }, { transform: "translateY(-400%)" }],
           {
-            duration: 20000,
+            duration: 400000,
             iterations: Infinity,
             easing: "linear",
           }
@@ -108,11 +163,11 @@ const ClientLogoSlider = () => {
             </div>
           ))}
           {/* duplicate logos for seamless loop */}
-          {logos.map((logo, index) => (
+          {/* {logos.map((logo, index) => (
             <div className="client-logo" key={index}>
               <img src={logo} alt={`Client ${index + 1}`} />
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

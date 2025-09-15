@@ -23,7 +23,7 @@
     .whyUsGrid {
       display: flex;
       justify-content: center;
-      align-items: center;
+      // align-items: center;
       gap: 2rem;
       flex-wrap: wrap;
       .transitionBtmToTop {
@@ -32,6 +32,7 @@
           border-radius: var(--normal-font);
           background-color: var(--card-background-color);
           padding: 1.5rem;
+          height: 100%;
           .icon {
             margin-bottom: 1rem;
             display: flex;
