@@ -134,14 +134,14 @@
 
 .homeLocateUsMapContainer {
   padding: 2rem 3rem;
-  text-align: center;
   font-size: var(--xxlarge-font);
-  color: var(--containedBg);
   font-weight: 700;
+  color: var(--body-background-color);
   .locateUsText {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--containedBg);
     gap: 1rem;
     .MuiSvgIcon-root {
       font-size: 2rem;
@@ -152,8 +152,32 @@
     gap: 1rem;
     margin-top: 1.5rem;
     .gmpMapContainer {
-      height: 400px;
+      height: 450px;
       width: 100%;
+      position: relative;
+      .displayOverMap {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #fff;
+        padding: 8px 12px;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        max-width: 280px;
+        z-index: 10;
+        // opacity: 0.8;
+        h6 {
+          font-size: 14px;
+          color: #212121;
+          margin: 0 0 6px 0;
+        }
+        p {
+          margin: 0;
+          line-height: 1.4;
+          font-size: 12px;
+          color: #616161;
+        }
+      }
     }
   }
 }
@@ -182,10 +206,10 @@
     }
   }
   .homeLocateUsMapContainer {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem 0rem;
     .mapLocation {
       .gmpMapContainer {
-        height: 300px;
+        height: 600px;
         width: 100%;
       }
     }

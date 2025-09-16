@@ -34,6 +34,9 @@
 .normalFont {
   font-size: var(--normal-font) !important;
 }
+.smallLargeFont {
+  font-size: var(--slarge-font) !important;
+}
 .largeFont {
   font-size: var(--large-font) !important;
 }

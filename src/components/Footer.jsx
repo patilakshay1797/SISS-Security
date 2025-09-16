@@ -128,15 +128,15 @@ const Footer = ({ activePage, setPage }) => {
                 <div className="address">
                   <LocationOnIcon></LocationOnIcon>
                   <div>
-                    Flat No. 05, Narayan Vihar, B Wing, Rajendra Nagar (Bhosale
-                    Nagar), Near Bird School, Kolhapur, 416013.
+                    Flat No. 05, Plot No. 15,16,17, Krishna Heritage, Rajyog
+                    Colony, Walekar Wadi, Chinchwad, Pune - 411033.
                   </div>
                 </div>
                 <div className="address">
                   <LocationOnIcon></LocationOnIcon>
                   <div>
-                    Flat No. 05, Plot No. 15,16,17, Krishna Heritage, Rajyog
-                    Colony, Walekar Wadi, Chinchwad, Pune - 411033.
+                    Flat No. 05, Narayan Vihar, B Wing, Rajendra Nagar (Bhosale
+                    Nagar), Near Bird School, Kolhapur, 416013.
                   </div>
                 </div>
               </div>

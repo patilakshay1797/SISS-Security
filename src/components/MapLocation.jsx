@@ -1,4 +1,11 @@
-import { APIProvider } from "@vis.gl/react-google-maps";
+import {
+  APIProvider,
+  AdvancedMarker,
+  Pin,
+  InfoWindow,
+  ControlPosition,
+  MapControl,
+} from "@vis.gl/react-google-maps";
 import { Map } from "@vis.gl/react-google-maps";
 import MapIcon from "@mui/icons-material/Map";
 import AnimateElement from "./AnimateElement";
@@ -29,24 +36,90 @@ export const MapLocation = () => {
             ></gmp-advanced-marker>
           </gmp-map> */}
         {/* <AnimateElement animationClass={"transitionBtmToTop"}> */}
-        <APIProvider apiKey="AIzaSyAvkLNGc8uNE020gAMWgH8bMdZA5W-nEPo">
+
+        <APIProvider
+          apiKey="AIzaSyAvkLNGc8uNE020gAMWgH8bMdZA5W-nEPo"
+          libraries={["geometry", "places"]}
+        >
           {/* Your map components and other content */}
           <div className="gmpMapContainer">
             <Map
-              defaultZoom={10}
-              defaultCenter={{ lat: 34.0522, lng: -118.2437 }} // Example coordinates
-              gestureHandling="greedy"
-            />
+              defaultZoom={17}
+              defaultCenter={{
+                lat: 19.863586156485855,
+                lng: 75.35275584287302,
+              }}
+              defaultHeading="Test Heading"
+              gestureHandling="cooperative"
+              mapId="DEMO_MAP_ID"
+              mapTypeId={"hybrid"}
+              disableDefaultUI={false}
+              options={{
+                mapTypeControl: false, // hides Map / Satellite toggle
+                streetViewControl: false, // (optional) hide street view
+                fullscreenControlOptions: {
+                  position: ControlPosition.BOTTOM_LEFT, // ✅ move bottom-left
+                },
+              }}
+            >
+              <AdvancedMarker
+                key="sambjakiNagar"
+                position={{
+                  lat: 19.863586156485855,
+                  lng: 75.35275584287302,
+                }}
+              >
+                <Pin />
+              </AdvancedMarker>
+            </Map>
+            <div className="displayOverMap">
+              <h6>Anuradha Apartment</h6>
+              <p>
+                Flat No. 01, Plot No. 37, Anuradha Apartment, Swapnnagari,
+                Garkheda Parisar, Chh. Sambhaji Nagar (Aurangabad), Maharashtra
+                - 431005.
+              </p>
+            </div>
           </div>
         </APIProvider>
         <APIProvider apiKey="AIzaSyAvkLNGc8uNE020gAMWgH8bMdZA5W-nEPo">
           {/* Your map components and other content */}
           <div className="gmpMapContainer">
             <Map
-              defaultZoom={10}
-              defaultCenter={{ lat: 34.0522, lng: -118.2437 }} // Example coordinates
-              gestureHandling="greedy"
-            />
+              defaultZoom={16}
+              defaultCenter={{
+                lat: 18.642966615022036,
+                lng: 73.76115066115332,
+              }} // Example coordinates
+              gestureHandling="cooperative"
+              mapId="DEMO_MAP_ID"
+              mapTypeId={"hybrid"}
+              disableDefaultUI={false}
+              options={{
+                mapTypeControl: false, // hides Map / Satellite toggle
+                streetViewControl: false, // (optional) hide street view
+                fullscreenControlOptions: {
+                  position: ControlPosition.BOTTOM_LEFT, // move bottom-left
+                },
+              }}
+            >
+              <AdvancedMarker
+                key="ravetPune"
+                position={{
+                  lat: 18.642966615022036,
+                  lng: 73.76115066115332,
+                }}
+              >
+                <Pin />
+              </AdvancedMarker>
+            </Map>
+            <div className="displayOverMap">
+              <h6>Krishna Heritage</h6>
+              <p>
+                Flat No. 05, Plot No. 15,16,17, Krishna Heritage, Rajyog Colony,
+                Walekar Wadi, Chinchwad, Pune - 411033.
+              </p>
+            </div>
           </div>
         </APIProvider>
         {/* </AnimateElement> */}

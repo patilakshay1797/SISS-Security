@@ -50,28 +50,29 @@ const ContactUs = () => {
               <MapIcon></MapIcon>
               <div className="reachToUs">Meet Us at</div>
             </div>
-
-            <div className="phoneNo normalFont">
-              <LocationOnIcon></LocationOnIcon>
-              <span>
-                Flat No. 01, Plot No. 37, Anuradha Apartment, Swapnnagari,
-                Garkheda Parisar Chh. Sambhaji Nagar (Aurangabad), Maharashtra -
-                431005.
-              </span>
-            </div>
-            <div className="phoneNo normalFont">
-              <LocationOnIcon></LocationOnIcon>
-              <span>
-                Flat No. 05, Narayan Vihar, B Wing, Rajendra Nagar (Bhosale
-                Nagar), Near Bird School, Kolhapur, 416013.
-              </span>
-            </div>
-            <div className="phoneNo normalFont">
-              <LocationOnIcon></LocationOnIcon>
-              <span>
-                Flat No. 05, Plot No. 15,16,17, Krishna Heritage, Rajyog Colony,
-                Walekar Wadi, Chinchwad, Pune - 411033.
-              </span>
+            <div className="alladdresses">
+              <div className="phoneNo smallLargeFont card">
+                <LocationOnIcon></LocationOnIcon>
+                <span>
+                  Flat No. 01, Plot No. 37, Anuradha Apartment, Swapnnagari,
+                  Garkheda Parisar Chh. Sambhaji Nagar (Aurangabad), Maharashtra
+                  - 431005.
+                </span>
+              </div>
+              <div className="phoneNo smallLargeFont card">
+                <LocationOnIcon></LocationOnIcon>
+                <span>
+                  Flat No. 05, Plot No. 15,16,17, Krishna Heritage, Rajyog
+                  Colony, Walekar Wadi, Chinchwad, Pune - 411033.
+                </span>
+              </div>
+              <div className="phoneNo smallLargeFont card">
+                <LocationOnIcon></LocationOnIcon>
+                <span>
+                  Flat No. 05, Narayan Vihar, B Wing, Rajendra Nagar (Bhosale
+                  Nagar), Near Bird School, Kolhapur, 416013.
+                </span>
+              </div>
             </div>
           </AnimateElement>
         </div>

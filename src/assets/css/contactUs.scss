@@ -50,23 +50,40 @@
     justify-content: center;
     padding: 0rem 1rem 1rem;
     .transitionBtmToTop {
-      width: 50%;
+      width: 70%;
       .phoneNo {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
-        text-align: start;
+        // text-align: start;
         line-height: 1.5rem;
+        flex-direction: column;
+        width: 33%;
+        gap: 0.5rem;
+        padding: 1rem;
+        .MuiSvgIcon-root {
+          font-size: var(--xxxlarge-font);
+        }
       }
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 768px) {
         width: 65%;
       }
       @media screen and (max-width: 992px) {
         width: 100%;
       }
       @media screen and (min-width: 1300px) {
-        width: 40%;
+        width: 60%;
+      }
+    }
+  }
+  .transitionBtmToTop .alladdresses {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      .phoneNo {
+        width: 100%;
       }
     }
   }
