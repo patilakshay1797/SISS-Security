@@ -59,10 +59,10 @@ const FoundationExpertisePromise = () => {
           </div>
           <div className="lableWithIconDescription">
             We are dedicated to building enduring relationships based on trust
-            and exceptional service. When you choose SISS, you’re not just
+            and exceptional service. When you choose SSS, you’re not just
             getting a service—you’re gaining a partner committed to your safety
             and peace of mind. Experience the difference of a customer-first
-            approach; experience the SISS difference.
+            approach; experience the SSS difference.
           </div>
         </AnimateElement>
       </div>

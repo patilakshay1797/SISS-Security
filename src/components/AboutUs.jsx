@@ -46,11 +46,11 @@ const AboutUs = () => {
               ensuring safety, cleanliness, and operational excellence in every
               environment we serve. */}
               <div>
-                For over 13 years, Swamini Investigation Security Services Pvt.
-                Ltd. (SISS) has been the trusted name in security. We are a
-                Government of Maharashtra-approved and ISO 9001-2015 certified
-                company, committed to delivering complete security, training,
-                and housekeeping solutions.
+                For over 13 years, Swamini Security Services Pvt. Ltd. (SSS) has
+                been the trusted name in security. We are a Government of
+                Maharashtra-approved and ISO 9001-2015 certified company,
+                committed to delivering complete security, training, and
+                housekeeping solutions.
               </div>
               <div className="ourFoundation">
                 <div className="foundation">
