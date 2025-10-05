@@ -1,7 +1,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import "../assets/css/servicesList.scss";
 import securityService from "../assets/images/istockphoto-1227467445-612x612.jpg";
-import houseKeeping from "../assets/images/houseKeeping.png";
+import houseKeeping from "../assets/images/houseKeeping.webp";
 import AnimateElement from "./AnimateElement";
 import { ProviderMethodContext } from "../MyFunction";
 import { useContext } from "react";

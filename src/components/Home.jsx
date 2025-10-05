@@ -1,4 +1,4 @@
-import homeLandingImage from "../assets/images/resized_security_guards_image.png";
+import homeLandingImage from "../assets/images/resized_security_guards_image-min.png";
 import "../assets/css/home.scss";
 import homeInfoImg from "../assets/images/Security-services-for-parking.jpg";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";

@@ -1,6 +1,6 @@
 import MissionVissionCore from "./MissionVissionCore";
 import HomeImgContainer from "./HomeImgContainer";
-import aboutUsHomeImg from "../assets/images/about_us_home.png";
+import aboutUsHomeImg from "../assets/images/about_us_home.webp";
 import homeInfoImg from "../assets/images/Security-services-for-parking.jpg";
 import "../assets/css/AboutUs.scss";
 import { ContactUsLinkHighlight } from "./ContactUsLinkHighlight";

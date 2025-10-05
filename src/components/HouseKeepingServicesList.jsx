@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../assets/css/HouseKeepingServicesList.scss";
-import testImg from "../assets/images/about_us_home.png";
+import testImg from "../assets/images/about_us_home.webp";
 import { HashLink as Link } from "react-router-hash-link";
 import { ProviderMethodContext } from "../MyFunction";
 import { useContext } from "react";

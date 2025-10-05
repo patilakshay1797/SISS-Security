@@ -1,7 +1,7 @@
 import ServicesList from "./ServicesList";
 import HomeImgContainer from "./HomeImgContainer";
 import { ContactUsLinkHighlight } from "./ContactUsLinkHighlight";
-import aboutUsHomeImg from "../assets/images/about_us_home.png";
+import aboutUsHomeImg from "../assets/images/about_us_home.webp";
 import SecurityServicesList from "./SecurityServicesList";
 import HouseKeepingServicesList from "./HouseKeepingServicesList";
 

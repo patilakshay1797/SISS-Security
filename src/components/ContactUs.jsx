@@ -5,7 +5,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import MapIcon from "@mui/icons-material/Map";
 import "../assets/css/contactUs.scss";
 import HomeImgContainer from "./HomeImgContainer";
-import aboutUsHomeImg from "../assets/images/about_us_home.png";
+import aboutUsHomeImg from "../assets/images/about_us_home.webp";
 import AnimateElement from "./AnimateElement";
 import { companyEmailId } from "../utils/constants";
 import LocationOnIcon from "@mui/icons-material/LocationOn";

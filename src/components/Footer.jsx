@@ -1,4 +1,4 @@
-import companyLogo from "../assets/images/Upscaled_LOGO.png";
+import companyLogo from "../assets/images/Upscaled_LOGO.webp";
 import { HashLink as Link } from "react-router-hash-link";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import "../assets/css/footer.scss";

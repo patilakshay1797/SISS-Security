@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "../assets/css/header.scss";
-import logo from "../assets/images/Upscaled_LOGO.png";
+import logo from "../assets/images/Upscaled_LOGO.webp";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState, useEffect, useRef } from "react";
 import CloseIcon from "@mui/icons-material/Close";
