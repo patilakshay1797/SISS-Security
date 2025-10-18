@@ -10,6 +10,14 @@ import socImg from "../assets/images/society_security_services.webp";
 import offImg from "../assets/images/offices_security_services.webp";
 import parkImg from "../assets/images/parking_security_services.webp";
 import gateImg from "../assets/images/gateway_security_services.webp";
+import corporateImg from "../assets/images/corporate1_security_services.webp";
+import educationalImg from "../assets/images/educational_institute_security_services.webp";
+import hotelsImg from "../assets/images/hotels_security_services.webp";
+import manufacturingImg from "../assets/images/manufacturing_industries_security_services.webp";
+import privateImg from "../assets/images/private_Property.webp";
+import godownImg from "../assets/images/godown_store.webp";
+import RestaurantImg from "../assets/images/RestaurantImg.webp";
+import SecuritycumdriverImg from "../assets/images/Security_cum_driver.webp";
 import { HashLink as Link } from "react-router-hash-link";
 import { ProviderMethodContext } from "../MyFunction";
 import { useContext } from "react";
@@ -66,13 +74,13 @@ const services = [
     title: "Security Services for Educational Institutes and Schools",
     description:
       "Ensure a safe and supportive learning environment for students and staff.",
-    image: testImg,
+    image: educationalImg,
   },
   {
     title: "Security Services for Manufacturing Companies and Factories",
     description:
       "Secure manufacturing facilities and prevent unauthorized access and loss.",
-    image: testImg,
+    image: manufacturingImg,
   },
   {
     title: "Security Services for Parking",
@@ -90,37 +98,37 @@ const services = [
     title: "Security Services for Hotels and Guest House",
     description:
       "Ensure a safe and welcoming environment for hotel and guest house guests.",
-    image: testImg,
+    image: hotelsImg,
   },
   {
     title: "Security Services for Corporates sectors",
     description:
       "Provide professional security for corporate offices and business facilities.",
-    image: testImg,
+    image: corporateImg,
   },
   {
     title: "Security Services for Private Property",
     description:
       "Safeguard personal properties with reliable and trained security personnel.",
-    image: testImg,
+    image: privateImg,
   },
   {
     title: "Security Services for Godowns and Warehouses",
     description:
       "Protect warehouses and godowns from theft and unauthorized access.",
-    image: testImg,
+    image: godownImg,
   },
   {
     title: "Security Services for IT Companies",
     description:
       "Provide dedicated security for IT campuses and infrastructure.",
-    image: testImg,
+    image: offImg,
   },
   {
     title: "Security Services for Restaurants",
     description:
       "Maintain secure dining experiences for guests and staff in restaurants.",
-    image: testImg,
+    image: RestaurantImg,
   },
   // {
   //   title: "Bouncers Security Services",
@@ -132,7 +140,7 @@ const services = [
     title: "Security guard cum driver",
     description:
       "Multi-skilled guards for both security and transportation support.",
-    image: testImg,
+    image: SecuritycumdriverImg,
   },
   // {
   //   title: "Security Patrolling",
@@ -144,7 +152,7 @@ const services = [
     title: "Unarmed Guards",
     description:
       "Professional, unarmed guards for observation, reporting, and access control.",
-    image: testImg,
+    image: corporateImg,
   },
   {
     title: "Security Gunman’s",

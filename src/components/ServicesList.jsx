@@ -39,10 +39,11 @@ const ServicesList = () => {
               <div className="securityInfo card">
                 <div className="xlargeFont">Security Services</div>
                 <div className="info normalFont">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam quod hic iusto repellat perspiciatis quos eius amet
-                  vero, recusandae aperiam, error possimus commodi ea,
-                  praesentium magni omnis provident. Aliquid, mollitia.
+                  Our trained security personnel ensure the safety and
+                  protection of your premises, assets, and people. We offer
+                  round-the-clock surveillance, access control, and prompt
+                  response to emergencies, maintaining a secure and worry-free
+                  environment for your business.
                 </div>
               </div>
             </Link>
@@ -69,10 +70,11 @@ const ServicesList = () => {
               <div className="houseKeepingInfo card">
                 <div className="xlargeFont">Housekeeping Services</div>
                 <div className="info normalFont">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Numquam quod hic iusto repellat perspiciatis quos eius amet
-                  vero, recusandae aperiam, error possimus commodi ea,
-                  praesentium magni omnis provident. Aliquid, mollitia.
+                  Our housekeeping team provides thorough cleaning and
+                  maintenance services to keep your premises spotless and
+                  hygienic. From offices to commercial spaces, we ensure a
+                  clean, organized, and welcoming environment for employees,
+                  visitors, and clients.
                 </div>
               </div>
             </Link>
