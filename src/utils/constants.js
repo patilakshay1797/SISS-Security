@@ -1,2 +1,2 @@
 export const companyName = "Swamini Security Services";
-export const companyEmailId = "tempsisssecurity@gamil.com";
+export const companyEmailId = "Swaminisecu_2006@rediffmail.com";
