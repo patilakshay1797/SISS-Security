@@ -76,7 +76,7 @@ const Home = () => {
               <LocalPhoneOutlinedIcon></LocalPhoneOutlinedIcon>
               <div className="phoneNumber">
                 <span className="connectText">Connect with us</span>
-                <span className="number">+91 8888888888</span>
+                <span className="number">+91 8983571126</span>
               </div>
             </div>
           </AnimateElement>

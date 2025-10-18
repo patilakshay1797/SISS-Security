@@ -17,37 +17,37 @@ const ContactUsForm = () => {
   const [progressValue, setProgressValue] = useState(0);
 
   const sendEmailMsg = (event, inputFormData) => {
-    // try {
-    //   emailjs
-    //     .send("siss-security-service", "template_i212dre", inputFormData)
-    //     .then((response) => {
-    //       event.target.reset();
-    //       setIsSendingMsg(false);
-    //       if (response.status === 200) {
-    //         setShowSuccess(true);
-    //       } else {
-    //         setShowError(true);
-    //       }
-    //       setIntForProgress();
-    //     })
-    //     .catch((error) => {
-    //       setIsSendingMsg(false);
-    //       setShowError(true);
-    //       setIntForProgress();
-    //     });
-    // } catch {
-    //   setIsSendingMsg(false);
-    //   setShowError(true);
-    //   setIntForProgress();
-    // }
-    let setInt;
-    setTimeout(() => {
-      event.target.reset();
+    try {
+      emailjs
+        .send("siss-security-service", "template_i212dre", inputFormData)
+        .then((response) => {
+          event.target.reset();
+          setIsSendingMsg(false);
+          if (response.status === 200) {
+            setShowSuccess(true);
+          } else {
+            setShowError(true);
+          }
+          setIntForProgress();
+        })
+        .catch((error) => {
+          setIsSendingMsg(false);
+          setShowError(true);
+          setIntForProgress();
+        });
+    } catch {
       setIsSendingMsg(false);
-      // setShowSuccess(true);
       setShowError(true);
       setIntForProgress();
-    }, 3000);
+    }
+    let setInt;
+    // setTimeout(() => {
+    //   event.target.reset();
+    //   setIsSendingMsg(false);
+    //   // setShowSuccess(true);
+    //   setShowError(true);
+    //   setIntForProgress();
+    // }, 3000);
   };
 
   function setIntForProgress() {

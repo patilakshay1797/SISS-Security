@@ -28,7 +28,7 @@ const ContactUs = () => {
                 <div className="reachToUs">Reach Us by Phone</div>
               </div>
 
-              <div className="phoneNo">+91 8888888888</div>
+              <div className="phoneNo">+91 8983571126</div>
             </div>
           </AnimateElement>
           <AnimateElement animationClass={"transitionBtmToTop"}>

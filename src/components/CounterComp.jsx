@@ -8,7 +8,7 @@ import HomeWorkIcon from "@mui/icons-material/HomeWork";
 import AnimateElement from "./AnimateElement";
 
 const stats = [
-  { icon: <GroupsIcon fontSize="large" />, label: "Clients", end: 300 },
+  { icon: <GroupsIcon fontSize="large" />, label: "Clients", end: 200 },
   {
     icon: <SecurityIcon fontSize="large" />,
     label: "Security Guards",
@@ -19,7 +19,7 @@ const stats = [
     label: "Years of Trust & Experience",
     end: 15,
   },
-  { icon: <HomeWorkIcon fontSize="large" />, label: "Sites", end: 200 },
+  { icon: <HomeWorkIcon fontSize="large" />, label: "Sites", end: 300 },
 ];
 
 const CounterComp = () => {

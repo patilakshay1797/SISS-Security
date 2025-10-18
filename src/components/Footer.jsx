@@ -158,7 +158,7 @@ const Footer = ({ activePage, setPage }) => {
               <div className="list">
                 <div className="info">
                   <LocalPhoneOutlinedIcon></LocalPhoneOutlinedIcon>
-                  <span>+91 8888888888</span>
+                  <span>+91 8983571126</span>
                 </div>
                 <div className="info">
                   <EmailIcon></EmailIcon>
