@@ -23,7 +23,7 @@ const HomeImgContainer = (props) => {
       </div>
       {props.isHomePage === "false" ? (
         <div className="homeLandPageContent notHomePage">
-          <div className="pageName xxxlargeFont">{props.pageName}</div>
+          <h1 className="pageName xxxlargeFont">{props.pageName}</h1>
           <div className="link">
             <Link to="/">Home / {props.pageName}</Link>
           </div>
@@ -31,21 +31,21 @@ const HomeImgContainer = (props) => {
       ) : (
         <div className="homeLandPageContent">
           <AnimateElement animationClass={"transitionBtmToTop"}>
-            <div className="headingTag delayedDisplay">
+            <h1 className="headingTag delayedDisplay">
               Welcome to {companyName}
-            </div>
+            </h1>
           </AnimateElement>
           <AnimateElement animationClass={"transitionBtmToTop"} propDelay={100}>
-            <div className="headingTagLine">Your Safety Is Our Mission.</div>
+            <h1 className="headingTagLine">Your Safety Is Our Mission.</h1>
           </AnimateElement>
           <AnimateElement animationClass={"transitionBtmToTop"} propDelay={200}>
-            <div className="largeFont headingInfo delayedDisplay">
+            <h1 className="largeFont headingInfo delayedDisplay">
               Protecting people and property with discipline, vigilance, and
               professionalism.
-            </div>
-            <div className="largeFont headingInfo delayedDisplay">
+            </h1>
+            <h1 className="largeFont headingInfo delayedDisplay">
               Reliable security tailored to your environment and needs.
-            </div>
+            </h1>
           </AnimateElement>
           <AnimateElement animationClass={"transitionBtmToTop"} propDelay={300}>
             <div className="servicesButton delayedDisplay">

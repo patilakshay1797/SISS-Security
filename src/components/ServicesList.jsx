@@ -13,8 +13,8 @@ const ServicesList = () => {
     <div className="homeServices">
       <AnimateElement animationClass={"transitionBtmToTop"}>
         <div className="ourServicesHeading">
-          <div>Our Services</div>
-          <div>We keep your places Safe and Clean</div>
+          <h1>Our Services</h1>
+          <h3>We keep your places Safe and Clean</h3>
         </div>
       </AnimateElement>
       <div className="services">

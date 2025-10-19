@@ -33,21 +33,21 @@ const Home = () => {
             propThreshold={0.3}
             propDelay={300}
           >
-            <div className="homeDediacatedText">
+            <h1 className="homeDediacatedText">
               Dedicated to safety, committed to vigilance.
-            </div>
+            </h1>
           </AnimateElement>
           <AnimateElement
             animationClass={"transitionBtmToTop"}
             propThreshold={0.4}
           >
-            <div className="homeDediacatedInfoText">
+            <h3 className="homeDediacatedInfoText">
               Delivering reliable protection and clean environments requires
               trained staff, proactive protocols, ongoing oversight, and a
               commitment to excellence. By following industry best practices and
               strict standards, we ensure safety and cleanliness you can trust
               every day.
-            </div>
+            </h3>
           </AnimateElement>
           <AnimateElement
             animationClass={"transitionBtmToTop"}
