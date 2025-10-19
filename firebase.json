@@ -4,7 +4,7 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "redirects": [
       {
-        "source": "/**",
+        "source": "/",
         "destination": "https://swaminisecurity.in",
         "type": 301
       }
