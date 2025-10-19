@@ -112,7 +112,7 @@ const Home = () => {
                 animationClass={"transitionLeftToRight"}
                 propDelay={600}
               >
-                <li>Registered Under MSME (Udyag Aadhaar).</li>
+                <li>Registered Under MSME (Udyog Aadhaar).</li>
               </AnimateElement>
               <AnimateElement
                 animationClass={"transitionLeftToRight"}
@@ -152,7 +152,7 @@ const Home = () => {
                 animationClass={"transitionRightToLeft"}
                 propDelay={400}
               >
-                <li>Registered Under Maharashtra Professions Tax.</li>
+                <li>Registered Under Maharashtra Professional Tax.</li>
               </AnimateElement>
               <AnimateElement
                 animationClass={"transitionRightToLeft"}
