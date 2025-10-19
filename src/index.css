@@ -181,7 +181,6 @@ a {
   }
 }
 .email {
-  text-decoration: underline;
   cursor: pointer;
   &:hover {
     color: var(--containedBg);
