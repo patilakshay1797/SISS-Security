@@ -1,24 +1,19 @@
 {
-  "hosting": [
-    {
-      "public": "dist",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
-    {
-      "target": "www",
-      "redirects": [
-        {
-          "source": "/**",
-          "destination": "https://swaminisecurity.in",
-          "type": 301
-        }
-      ]
-    }
-  ]
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "source": "/**",
+        "destination": "https://swaminisecurity.in",
+        "type": 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }
