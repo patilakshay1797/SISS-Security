@@ -57,9 +57,9 @@
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Swamini Security Services",
+        "name": "Swamini Security",
         "url": "https://swaminisecurity.in/",
-        "logo": "https://swaminisecurity.in/logo.png",
+        "logo": "https://swaminisecurity.in/Upscaled_LOGO-CKyIGdv7",
         "description": "Swamini Security provides professional security guard and housekeeping services for corporate offices, hospitals, industries, and educational institutes.",
         "address": {
           "@type": "PostalAddress",
@@ -67,13 +67,27 @@
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+91-8208226422",
+          "telephone": "+91-8983571126",
           "contactType": "Customer Service"
         },
         "sameAs": [
           "https://www.facebook.com/",
           "https://www.linkedin.com/company/"
         ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Swamini Security",
+        "url": "https://swaminisecurity.in/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://swaminisecurity.in/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     </script>
 
@@ -88,9 +102,22 @@
         });
       })();
     </script>
+    <style>
+      .placeholder {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <div class="placeholder">
+      Welcome to
+      <h1>Swamini Security</h1>
+      , a trusted security and housekeeping agency in Pune and across
+      Maharashtra. At Swamini Security, we provide reliable, trained
+      professionals to safeguard industries, hospitals, corporates, and
+      educational institutions.
+    </div>
     <script type="module" src="/src/App.jsx"></script>
   </body>
 </html>
