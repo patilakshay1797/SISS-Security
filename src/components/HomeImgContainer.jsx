@@ -4,10 +4,28 @@ import "../assets/css/homeImgContainer.scss";
 import AnimateElement from "./AnimateElement";
 import { companyName } from "../utils/constants";
 import { ProviderMethodContext } from "../MyFunction";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 const HomeImgContainer = (props) => {
   const { myFunction } = useContext(ProviderMethodContext);
+  const [homeImgIndex, setHomeImgIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalValue = setInterval(() => {
+      setHomeImgIndex((prev) => {
+        if (props.loadingImages && props.loadingImages.length > 1) {
+          return prev === props.loadingImages.length - 1 ? 0 : prev + 1;
+        } else {
+          return 0;
+        }
+      });
+    }, 4000);
+
+    return () => {
+      clearInterval(intervalValue);
+    };
+  }, [homeImgIndex]);
+
   return (
     <div
       className={
@@ -18,7 +36,12 @@ const HomeImgContainer = (props) => {
     >
       <div className="landingImg">
         <img
-          src={props?.loadingImages?.[0] ? props?.loadingImages?.[0] : ""}
+          key={homeImgIndex}
+          src={
+            props?.loadingImages?.[homeImgIndex]
+              ? props?.loadingImages?.[homeImgIndex]
+              : ""
+          }
         ></img>
       </div>
       {props.isHomePage === "false" ? (

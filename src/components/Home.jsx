@@ -1,14 +1,14 @@
 import homeLandingImage from "../assets/images/resized_security_guards_image-min.png";
 import "../assets/css/home.scss";
-import homeInfoImg from "../assets/images/Security-services-for-parking.jpg";
+import homeInfoImg2 from "../assets/images/homeInfoImg2.jpeg";
+import homeImg2 from "../assets/images/homeImg2.jpeg";
+import homeImg3 from "../assets/images/homeImg3.jpeg";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
-import { Input } from "@mui/material";
 import { EmailJSForm } from "./EmailJSForm";
 import { MapLocation } from "./MapLocation";
 import ServicesList from "./ServicesList";
 import HomeImgContainer from "./HomeImgContainer";
-import MissionVissionCore from "./MissionVissionCore";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import AnimateElement from "./AnimateElement";
 import WhyUs from "./WhyUs";
@@ -16,7 +16,7 @@ import CounterComp from "./CounterComp";
 import ClientLogoSlider from "./ClientLogoSlider";
 
 const Home = () => {
-  const homeLoadingImages = [homeLandingImage];
+  const homeLoadingImages = [homeLandingImage, homeImg2, homeImg3];
   return (
     <main>
       <HomeImgContainer
@@ -25,7 +25,7 @@ const Home = () => {
       ></HomeImgContainer>
       <div className="homeInfoContainer">
         <div className="homeInfoImgContainer">
-          <img src={homeInfoImg}></img>
+          <img src={homeInfoImg2}></img>
         </div>
         <div className="homeInfoDetailContainer">
           <AnimateElement

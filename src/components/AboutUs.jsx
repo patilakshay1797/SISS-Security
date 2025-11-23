@@ -1,7 +1,7 @@
 import MissionVissionCore from "./MissionVissionCore";
 import HomeImgContainer from "./HomeImgContainer";
 import aboutUsHomeImg from "../assets/images/about_us_home.webp";
-import homeInfoImg from "../assets/images/Security-services-for-parking.jpg";
+import homeInfoImg2 from "../assets/images/homeInfoImg2.jpeg";
 import "../assets/css/AboutUs.scss";
 import { ContactUsLinkHighlight } from "./ContactUsLinkHighlight";
 import AnimateElement from "./AnimateElement";
@@ -20,7 +20,7 @@ const AboutUs = () => {
       ></HomeImgContainer>
       <div className="aboutUsInfoConatiner">
         <div className="aboutUsInfoImgContainer">
-          <img src={homeInfoImg}></img>
+          <img src={homeInfoImg2}></img>
         </div>
         <div className="aboutUsInfoText">
           <AnimateElement
