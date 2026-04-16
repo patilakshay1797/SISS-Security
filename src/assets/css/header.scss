@@ -185,6 +185,19 @@ header {
           justify-content: center;
           align-items: start;
           gap: 0.3rem;
+          .reachToUs {
+            width: 100%;
+            &::before {
+              right: 0;
+              left: 0;
+            }
+          }
+
+          div,
+          a {
+            padding: 0.1rem;
+          }
+
           // background-color: var(--dark-shade-black);
           font-size: var(--normal-font);
           .icon {
