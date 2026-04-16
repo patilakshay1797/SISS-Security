@@ -10,6 +10,15 @@ header {
   width: 100%;
   font-size: var(--large-font);
   z-index: 99;
+  transition: all ease-in-out 0.5s;
+
+  &.animateHeader {
+    margin: 10px 2%;
+    width: 96%;
+    opacity: 0.8;
+    border-radius: 10px;
+    height: 65px !important;
+  }
 
   .navList {
     ul {
@@ -72,7 +81,7 @@ header {
     z-index: 100;
     transition: all 0.5s linear;
     &.reduceLogoWidth {
-      transform: scale(0.6) translate(-3rem, -2rem);
+      transform: scale(0.5) translate(-4rem, -2.6rem);
     }
   }
 }

@@ -86,7 +86,11 @@ const Header = ({ activePage, setPage }) => {
           src={logo}
         />
       </div>
-      <header>
+      <header
+        className={`${
+          scrollPosition > 500 && window.innerWidth > 992 ? "animateHeader" : ""
+        }`}
+      >
         <div
           ref={popoverRef}
           className={`navList ${
